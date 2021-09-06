@@ -1,0 +1,70 @@
+@use '../buttons.scss';
+
+.webkit-contact-banner-container {
+  @apply relative z-10 grid grid-cols-24 mt-verticalSpacing l:mt-1/24 xs:mt-2/24;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px 2px;
+  @apply theme('contactBanner.color');
+}
+
+.webkit-contact-banner-outer-cell {
+  @apply row-start-1 row-span-1 col-start-1 col-span-24;
+}
+
+.webkit-contact-banner-bg-img {
+  @apply row-start-1 row-span-1 col-start-1 col-span-24;
+  @apply theme('contactBanner.backgroundImageAspect');
+}
+
+.webkit-contact-banner-grid {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24 h-full;
+}
+
+.webkit-contact-banner-cell {
+  @apply col-start-3 col-span-20 self-center;
+  @apply s:col-start-2 s:col-span-22;
+}
+
+.webkit-contact-banner {
+  @apply py-10;
+  @apply flex flex-wrap justify-between;
+}
+
+.webkit-contact-banner-text {
+  max-width: 50%;
+  @apply self-center pr-4 s:pr-0 s:text-center s:pb-1/24;
+  @apply theme('contactBanner.font');
+  @apply xs:text-f2xs;
+
+  @screen s {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.webkit-contact-banner-actions {
+  @apply self-center;
+
+  @screen s {
+    flex-basis: 100%;
+    @apply flex justify-center flex-wrap;
+  }
+}
+
+.webkit-contact-banner-button {
+  @apply flex-none m:text-center mr-2 xs:mr-1 px-5;
+  @apply theme('contactBanner.buttonFont');
+
+  i:before {
+    @apply theme('contactBanner.buttonFont');
+  }
+}
+
+.button-color-without-img {
+  @apply theme('contactBanner.buttonColorWithoutImage') #{!important};
+}
+
+.button-color-with-img {
+  @apply theme('contactBanner.buttonColorWithImage');
+}
+

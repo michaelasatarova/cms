@@ -1,0 +1,18 @@
+contentColumnType: string(256)
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: textShort
+instructions: ''
+name: 'Text Kurz'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 64
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

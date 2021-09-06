@@ -1,0 +1,25 @@
+.overlay {
+  @apply fixed overflow-hidden;
+  z-index: -1;
+  // fade out
+  @apply invisible opacity-0;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear 0s;
+  pointer-events: none;
+
+  // open overlay
+  &.overlay-show {
+    pointer-events: all;
+    overflow-y: scroll;
+    z-index: 10000;
+    // fade in
+    @apply visible opacity-100;
+    transition: visibility 0s linear 0s, opacity 0.2s linear 0s;
+  }
+
+  .overlay-inner {
+    padding-top: .7rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

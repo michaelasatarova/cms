@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  07f81290-3b27-4e79-8d02-dbfb777e594a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3083ffd7-3b97-424e-8875-6200f1401605 # Testimonial Slides
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Testimonial
+        sortOrder: 1
+handle: testimonial
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Testimonial'
+sortOrder: 6
+topLevel: true

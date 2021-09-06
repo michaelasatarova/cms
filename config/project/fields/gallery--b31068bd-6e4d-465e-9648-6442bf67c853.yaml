@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: gallery
+instructions: ''
+name: Gallery
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - b1344ae1-32d4-411d-b427-654ec988089c # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - e04d3b2c-54a6-4485-9b0e-30196fd2486f # Album
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_gallery}}'
+  fieldLayout: matrix
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: 'Album hinzufügen'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

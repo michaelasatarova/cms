@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  e0682bf1-1c43-41c1-b67a-5ca3aac09176:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Heading
+        sortOrder: 1
+handle: heading
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Titel Text'
+sortOrder: 1
+topLevel: true

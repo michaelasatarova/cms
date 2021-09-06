@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "./node_modules/stylelint-prettier"
+  ],
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": [
+        "*.scss",
+        "*.sass"
+      ],
+      "options": {
+        "parser": "scss",
+        "tabWidth": 2,
+        "useTabs": false,
+        "printWidth": 80,
+        "singleQuote": true
+      }
+    }
+  ]
+}

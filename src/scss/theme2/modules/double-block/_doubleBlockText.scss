@@ -1,0 +1,48 @@
+@use '../../buttons.scss';
+
+.webkit-double-text {
+  @apply self-center p-2/24 xs:px-2/24 h-full bg-color5 rounded-r-2xl content-center xs:rounded-b-2xl xs:rounded-t-none;
+  /* box-shadow: 2px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 -2px 4px -1px rgba(0, 0, 0, 0.06); */
+  @apply xs:relative z-10;
+
+  @apply relative;
+
+  @screen xs {
+    order: -1;
+  }
+}
+
+.webkit-double-text-grid {
+  @apply grid;
+  /* grid-template-rows: max-content 1fr max-content; */
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 8.333333333333332%;
+  left: 8.333333333333332%;
+
+  @screen xs {
+    position: relative;
+    transform: translate(0, 0);
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.webkit-double-text-title {
+  @apply self-end text-left;
+  @apply theme('doubleBlock.textBlock.title.font');
+}
+
+.webkit-double-text-content {
+  @apply theme('doubleBlock.textBlock.text.font');
+  @apply py-1 m:py-1 xs:py-1;
+}
+
+.webkit-double-text-btn {
+  @apply mt-4 justify-self-start;
+  @apply s:mt-2;
+}

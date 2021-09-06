@@ -1,0 +1,49 @@
+.webkit-text-infos-container {
+  @apply grid-cols-24 grid;
+  @apply max-w-content mx-auto;
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-text-infos-text {
+  @apply text-left mb-8;
+  @apply col-start-3 col-span-13;
+  @apply theme('text.font');
+
+  @screen s {
+    @apply col-start-3 col-span-20;
+  }
+}
+
+.webkit-infos {
+  @apply text-left;
+  @apply col-start-17 col-span-6;
+  @apply theme('text.font');
+
+  @screen s {
+    @apply col-start-3 col-span-20;
+  }
+}
+
+.webkit-infos-website {
+  @apply mt-6 font-bold;
+}
+
+.webkit-infos-socialmedia {
+  @apply mt-6;
+}
+
+
+.webkit-infos-social-media-icons {
+
+  @apply relative;
+  @apply mx-0 w-7 h-7;
+  @apply text-color2 bg-color1 rounded-sm;
+
+  &::before {
+    margin-top: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,35 @@
+stages:
+  - build
+  - deploy
+
+include:
+  - local: "lib/BuildDeployWeb.gitlab-ci.yml"
+
+# ----------------------------------------------------------------------------------------
+# Staging
+
+deploy_staging:
+  extends: .deploy
+  only:
+    - staging
+  environment:
+    name: staging
+    url: https://dev.example.com/
+  script:
+    - npm run-script deploy:craft -- $DEPLOYFTPSTAGING
+    - npm run-script deploy:webroot -- $DEPLOYFTPSTAGING
+
+# ----------------------------------------------------------------------------------------
+# Production
+
+deploy_production:
+  extends: .deploy
+  only:
+    - master
+  when: manual
+  environment:
+    name: production
+    url: https://www.example.com/
+  script:
+    - npm run-script deploy:craft -- $DEPLOYFTPPRODUCTION
+    - npm run-script deploy:webroot -- $DEPLOYFTPPRODUCTION

@@ -1,0 +1,24 @@
+{
+  "imageResizable": false,
+  "imageLink": false,
+  "imageCaption": false,
+  "imageFloatMargin": "0px",
+  "buttons": [
+    "html",
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link",
+    "image",
+    "file"
+  ],
+  "plugins": [],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "formatting": [
+    "p",
+    "h3"
+  ]
+}

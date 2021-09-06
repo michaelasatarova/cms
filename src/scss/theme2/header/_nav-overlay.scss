@@ -1,0 +1,123 @@
+.webkit-header-nav-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 37.5%;
+  right: -37.5%;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  @apply theme('header.menu.color');
+  transition: right 0.2s ease, opacity 0.3s ease-out;
+
+  @screen l {
+    width: 45%;
+    right: -45%;
+  }
+
+  @screen m {
+    width: 58%;
+    right: -58%;
+  }
+
+  @screen s {
+    width: 75%;
+    right: -75%;
+  }
+
+  @screen xs {
+    width: 100%;
+    right: -100%;
+  }
+
+  &.overlay-active {
+    z-index: 5;
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.webkit-header-nav-overlay-grid {
+  @apply grid h-full;
+  grid-template-rows: max-content max-content 1fr max-content;
+}
+
+.webkit-header-nav-overlay-close {
+  height: max-content;
+  @apply col-start-1 col-span-1 row-start-1 row-span-1;
+  @apply justify-self-end pr-3 pt-3;
+  @apply text-color2 cursor-pointer;
+  @apply theme('header.menu.iconSize');
+}
+
+.webkit-language-switcher-container-mobile {
+  @apply col-start-1 col-span-1 row-start-2 row-span-1;
+  @apply mt-8 xs:mt-4 xs:mb-6 ml-20 xs:ml-12;
+}
+
+.webkit-header-nav-item-list {
+  width: max-content;
+  height: max-content;
+  @apply col-start-1 col-span-1 row-start-3 row-span-1;
+  @apply mt-10 ml-20 xs:ml-12 xs:mt-2;
+}
+
+.webkit-header-nav-item + .webkit-header-nav-item {
+  @apply pt-6;
+}
+
+.webkit-nav-overlay-socials {
+  padding-left: 3.5rem;
+  @apply row-start-4 row-span-1 w-full;
+  @apply self-center justify-self-start;
+  @apply theme('header.menu.socials.font');
+  @apply theme('header.menu.socials.border');
+  @apply xs:px-6 xs:justify-self-start;
+}
+
+.webkit-header-navigation-activeLink {
+  @apply inline-block;
+  @apply theme('header.activeLinkColor');
+  @apply transition-colors;
+
+  &:hover {
+    &:after {
+      @apply theme('base.linkHoverColor');
+    }
+  }
+}
+
+.webkit-header-navigation-activeLink:after {
+  content: "";
+  opacity: 1;
+  display: block;
+  width: 100%;
+  @apply theme('header.activeUnderline');
+}
+
+.webkit-nav-overlay-contact {
+  @apply inline-block my-4;
+  vertical-align: middle;
+}
+
+.webkit-nav-overlay-contact-item {
+  @apply inline-block pl-6;
+  @apply theme('header.menu.socials.font');
+
+  i:before {
+    @apply theme('header.menu.socials.contactIconColor');
+  }
+}
+
+.webkit-nav-overlay-social-media {
+  @apply inline-block mb-4 px-6;
+  @apply theme('header.menu.socials.socialIconSize');
+
+  a {
+    @apply inline-block;
+  }
+
+  a + a {
+    @apply ml-4;
+  }
+}

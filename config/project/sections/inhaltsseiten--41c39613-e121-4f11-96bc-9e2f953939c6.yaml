@@ -1,0 +1,19 @@
+enableVersioning: true
+handle: inhaltsseiten
+name: Inhaltsseiten
+propagationMethod: all
+siteSettings:
+  3264890e-5157-4c66-bae6-dfff63d808d4: # craft webkit
+    enabledByDefault: true
+    hasUrls: true
+    template: _layouts/site
+    uriFormat: '{parent.uri ?? ''''}/{slug}'
+  f19f374f-2e33-41a3-a13e-0bebaa417841: # craft webkit EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _layouts/site
+    uriFormat: '{parent.uri ?? ''''}/{slug}'
+structure:
+  maxLevels: null
+  uid: e66f075f-de58-4ae8-afbe-a4cac68ab80d
+type: structure

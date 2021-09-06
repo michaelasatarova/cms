@@ -1,0 +1,9 @@
+format: jpg
+handle: webkitFullSize
+height: null
+interlace: none
+mode: crop
+name: 'Full Size'
+position: center-center
+quality: null
+width: 1920

@@ -1,0 +1,34 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  a9953575-ac2a-4608-9d3d-6ab3529d3375:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: 'Video Titel'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 44a1508f-29ed-40ae-a6ad-e4f2b9a446f0 # Youtube ID
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Youtube Video'
+        sortOrder: 1
+handle: video
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Video'
+sortOrder: 5
+topLevel: true

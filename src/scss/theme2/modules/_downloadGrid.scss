@@ -1,0 +1,41 @@
+.download-grid-container {
+  @apply grid grid-cols-24 max-w-content mx-auto;
+}
+
+.download-grid-cell {
+  @apply grid grid-cols-3 gap-4 l:grid-cols-2 xs:grid-cols-1;
+}
+
+.download-grid-button {
+  @apply flex h-10 w-10 col-start-1 col-span-1;
+}
+
+.download-grid-text-cell {
+  @apply flex w-auto h-10;
+  @apply col-start-2 col-span-1 self-center;
+}
+
+.download-grid-text {
+  @apply flex pr-4 text-xs whitespace-nowrap items-center;
+}
+
+.download-inner-grid {
+  @apply grid;
+  grid-template-columns: max-content 1fr;
+  
+}
+
+.download-grid-content {
+  @apply bg-color2 rounded-2xl text-color1;
+
+  @screen minL {
+    @apply hover:bg-color1 hover:text-color2;
+
+    i {
+      @apply hover:text-color1;
+    }
+    a {
+      @apply hover:text-color2;
+    }
+  }
+}

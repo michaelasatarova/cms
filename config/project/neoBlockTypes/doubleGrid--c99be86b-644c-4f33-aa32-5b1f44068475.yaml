@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  987cd24b-08b1-4476-9e7b-c55fb6c421ed:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ddb9fa7d-f09f-443c-8343-2624de708049 # Zweiergrid
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: doubleGrid
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: '2er Raster Bild & Text'
+sortOrder: 18
+topLevel: true

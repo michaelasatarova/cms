@@ -1,0 +1,19 @@
+.webkit-heading-container {
+  @apply theme('heading.color');
+}
+.webkit-heading {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+  @apply pb-2 pt-8;
+  @apply text-left;
+  @apply theme('heading.font');
+}
+
+.webkit-heading-cell {
+  @apply col-start-3 col-span-20 s:col-start-3 s:col-span-20;
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}

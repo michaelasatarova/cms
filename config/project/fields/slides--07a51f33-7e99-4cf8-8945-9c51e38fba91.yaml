@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: slides
+instructions: ''
+name: Slides
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 4b1882f6-18d9-4a2f-a0f6-ebe9d3785b96 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - 35%
+      -
+        - 72da1f4a-2839-4c2e-85ea-e4f4def3e686 # Bild
+        -
+          __assoc__:
+            -
+              - width
+              - 15%
+      -
+        - cedc4a23-b718-415a-b098-da392c541a82 # Link
+        -
+          __assoc__:
+            -
+              - width
+              - 25%
+      -
+        - e4aac7fc-a36c-4e43-a20f-60f372772fa3 # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - 15%
+  contentTable: '{{%stc_slides}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: '1'
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: 'Slide hinzufügen'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

@@ -1,0 +1,63 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  6b7e9c4f-68f2-44b8-8dbc-5ea3f28f5556:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5515b856-0af6-4bef-9568-5b76cefece55 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5c101732-a71f-4cd2-8713-386244b1fbb7 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5c101732-a71f-4cd2-8713-386244b1fbb7: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  5515b856-0af6-4bef-9568-5b76cefece55: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: textarea
+name: 'Mehrzeiliger Text'
+sortOrder: 7

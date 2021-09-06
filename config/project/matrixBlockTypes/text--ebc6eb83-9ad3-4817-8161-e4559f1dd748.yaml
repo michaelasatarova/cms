@@ -1,0 +1,91 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  37006405-6ce6-470a-9c3b-8976b95464ba:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fb217350-e756-46c9-a054-24c690359833 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4ac263ff-7e04-413f-aa43-6d7cda30c63e # Platzhalter Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 847704ac-cf2a-4b5a-9013-346588c9eff1 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4ac263ff-7e04-413f-aa43-6d7cda30c63e: # Platzhalter Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: placeholder
+    instructions: ''
+    name: 'Platzhalter Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  847704ac-cf2a-4b5a-9013-346588c9eff1: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  fb217350-e756-46c9-a054-24c690359833: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: text
+name: Text
+sortOrder: 1

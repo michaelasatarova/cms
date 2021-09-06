@@ -1,0 +1,56 @@
+field: c282063a-f8a4-4b79-b8bd-7e9fd0da9205 # Double Blocks
+fieldLayouts:
+  60cf14da-5b11-4c1e-a50e-937fc859dedc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7c1b1bbf-20a6-4751-b641-c86875b38786 # Liste
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  7c1b1bbf-20a6-4751-b641-c86875b38786: # Liste
+    contentColumnType: string
+    fieldGroup: null
+    handle: list
+    instructions: "Icon von https://fontawesome.com/\r\nFormat: fas fa-arrow-right"
+    name: Liste
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 9514b336-4d2c-4d7b-b4c6-a57026cb5eaa # Icon
+            -
+              __assoc__:
+                -
+                  - width
+                  - 25%
+          -
+            - edfe157b-06af-4ce4-808a-88e789977548 # Link Button
+            -
+              __assoc__:
+                -
+                  - width
+                  - 75%
+      contentTable: '{{%stc_75_list}}'
+      fieldLayout: table
+      maxRows: '4'
+      minRows: '1'
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: 'Link hinzufügen'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: list
+name: Liste
+sortOrder: 2

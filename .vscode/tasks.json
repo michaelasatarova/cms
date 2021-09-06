@@ -1,0 +1,101 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "composer optimize autoloader",
+      "type": "npm",
+      "script": "composer:optimize-autoloader",
+      "problemMatcher": []
+    },
+    {
+      "label": "Webkit: Copy default TailwindCSS config file",
+      "type": "shell",
+      "command": "composer",
+      "args": [
+        "run-script",
+        "webkitCopyDefaultConfig"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "db-pull staging => dev",
+      "type": "npm",
+      "script": "db-pull:staging",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "db-push staging => dev",
+      "type": "npm",
+      "script": "db-push:staging",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "db-import staging => dev",
+      "type": "npm",
+      "script": "db-import:staging",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "watch:live",
+      "type": "npm",
+      "script": "watch:live",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "build:dev",
+      "type": "npm",
+      "script": "build:dev",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "build:staging",
+      "type": "npm",
+      "script": "build:staging",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "build:es5:staging",
+      "type": "npm",
+      "script": "build:es5:staging",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "build:production",
+      "type": "npm",
+      "script": "build:production",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "build:es5:production",
+      "type": "npm",
+      "script": "build:es5:production",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+    {
+      "label": "upgrade-interactive",
+      "type": "npm",
+      "script": "upgrade-interactive",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ]
+    },
+  ]
+}

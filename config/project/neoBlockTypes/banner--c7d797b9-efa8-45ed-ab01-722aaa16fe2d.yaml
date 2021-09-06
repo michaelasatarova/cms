@@ -1,0 +1,43 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  d2353857-6b8f-48e7-8285-ecaf63818a5f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8016b5d1-0daa-48be-aad3-b95304e4b6af # Text Lang
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e12c3611-0537-4be1-8b17-1e6b0970fd25 # Link Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Banner
+        sortOrder: 1
+handle: banner
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Text'
+sortOrder: 3
+topLevel: true

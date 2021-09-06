@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 2a2eb0bd-8dc4-4700-84d9-aae01b0f498c # Webkit Footer Module
+fieldLayouts:
+  eb34e379-0e09-4a2b-b124-011d8723afe6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 148a3e7c-2a18-409f-a343-5d1627de8284 # Text Body
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: text
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Text
+sortOrder: 3
+topLevel: true

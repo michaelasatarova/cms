@@ -1,0 +1,79 @@
+@use '../base' as *;
+
+.overlay.overlay-navigation-desktop {
+  @apply top-0;
+  @apply overflow-visible #{!important};
+  margin-top: 70px;
+  height: max-content;
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear 0s,
+    z-index 0s linear 0.2s;
+
+  &.overlay-show {
+    z-index: 10000;
+    transition: visibility 0s linear 0s, opacity 0.2s linear 0s,
+      z-index 0s linear 0s;
+  }
+
+  a.active {
+    @apply text-color4;
+  }
+
+  > .overlay-inner {
+    @apply bg-color5 rounded-2xl mt-2;
+    @apply col-start-4 col-span-18 relative shadow;
+    border-top: 1px solid #f3f3f3;
+
+    &.informationen-nav {
+      @apply bg-color1 text-color2;
+
+      a {
+        @apply text-color2 hover:text-color2;
+      }
+    }
+  }
+
+  .nav-overlay-outer-grid {
+    @apply grid grid-cols-22;
+  }
+
+  .nav-overlay-cell {
+    @apply col-start-4 col-span-16;
+    @apply xl:col-start-4 xl:col-span-17;
+  }
+
+  .nav-overlay-innner-grid {
+    @apply grid grid-cols-4;
+    @apply gap-x-16 gap-y-5;
+  }
+
+  .nav-overlay-group {
+  }
+
+  .nav-overlay-group-title {
+    @apply flex text-f5 font-bold pb-1 h-8 select-none;
+  }
+
+  .nav-overlay-group a {
+    @apply transition-colors;
+
+    &:hover {
+      @apply text-color4;
+
+      > i {
+        @apply text-color4;
+      }
+    }
+  }
+
+  .informationen-nav .nav-overlay-group a {
+    @apply transition-colors;
+
+    &:hover {
+      @apply text-color2;
+
+      > i {
+        @apply text-color2;
+      }
+    }
+  }
+}

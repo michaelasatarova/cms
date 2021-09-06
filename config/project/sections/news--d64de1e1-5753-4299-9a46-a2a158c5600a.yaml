@@ -1,0 +1,16 @@
+enableVersioning: true
+handle: news
+name: News
+propagationMethod: all
+siteSettings:
+  3264890e-5157-4c66-bae6-dfff63d808d4: # craft webkit
+    enabledByDefault: true
+    hasUrls: true
+    template: _layouts/site
+    uriFormat: 'news/{slug}'
+  f19f374f-2e33-41a3-a13e-0bebaa417841: # craft webkit EN
+    enabledByDefault: true
+    hasUrls: true
+    template: _layouts/site
+    uriFormat: 'news/{slug}'
+type: channel

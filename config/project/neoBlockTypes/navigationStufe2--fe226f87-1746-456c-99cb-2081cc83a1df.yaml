@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 86c4e5d6-fede-4687-b2d2-6395be33c1a9 # Navigation Mehrstufig
+fieldLayouts:
+  910231c8-7d12-437a-8c58-73705fc5f85c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e12c3611-0537-4be1-8b17-1e6b0970fd25 # Link Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Link
+        sortOrder: 1
+handle: navigationStufe2
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Navigation Stufe 2'
+sortOrder: 2
+topLevel: true

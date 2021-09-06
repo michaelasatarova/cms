@@ -1,0 +1,37 @@
+.webkit-text-container {
+  @apply theme('text.color');
+  @apply pt-verticalSpacing pb-20 l:pt-1/24 l:pb-2/24 m:pb-1/24 s:py-2/24;
+}
+
+.webkit-text {
+  @apply text-left;
+  @apply grid-cols-24 grid max-w-content mx-auto;
+  @apply theme('text.font');
+}
+
+.webkit-text-heading {
+  @apply text-left;
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  padding-bottom: 1rem;
+
+  @screen m {
+    padding-bottom: .9rem;
+  }
+
+  @screen xs {
+    padding-bottom: .8rem;
+  }
+
+  @apply theme('text.title.font');
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+.webkit-text-cell {
+  @apply col-start-3 col-span-20 pb-8;
+  @apply s:col-start-3 s:col-span-20;
+}

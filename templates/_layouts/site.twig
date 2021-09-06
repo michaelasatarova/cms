@@ -1,0 +1,28 @@
+{% extends "webkit/_layouts/base" %}
+
+
+{% block favicons %}
+	{% include "_includes/favicons.twig" %}
+{% endblock favicons %}
+
+
+{% block preHead %}
+	{% include "_includes/head-scripts" %}
+{% endblock preHead %}
+
+
+{% block contentBeforeWebkitModules %}{% endblock contentBeforeWebkitModules %}
+
+
+{% block contentAfterWebkitModules %}{% endblock contentAfterWebkitModules %}
+
+
+{% block preFooter %}
+{% endblock preFooter %}
+
+{% block postFooter %}
+{% endblock postFooter %}
+
+{% block endBody %}
+	{% include "_includes/footer-scripts" %}
+{% endblock endBody %}

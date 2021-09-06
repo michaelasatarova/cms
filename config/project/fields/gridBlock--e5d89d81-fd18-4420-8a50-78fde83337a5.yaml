@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: gridBlock
+instructions: ''
+name: 'Grid Block'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 8e21212c-bd4b-45b5-b2ed-84cf40e47df8 # Bild
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 2eaf5d84-2041-4c70-9adb-071318a95caf # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 4411d17e-60a2-4002-b8e1-045598fbc880 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1c766314-fb4a-4df3-90c7-f7673d908c4d # Link Button
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_gridblock}}'
+  fieldLayout: matrix
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

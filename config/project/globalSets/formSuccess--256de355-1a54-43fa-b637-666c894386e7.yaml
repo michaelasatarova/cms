@@ -1,0 +1,19 @@
+fieldLayouts:
+  888dfd0b-a581-4385-a6e3-c2e1bfc64976:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+            instructions: ''
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Formular Bestätigung'
+        sortOrder: 1
+handle: formSuccess
+name: 'Formular Bestätigung'
+sortOrder: 3

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: blocks
+instructions: ''
+name: 'Double Blocks'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_blocks}}'
+  maxBlocks: '2'
+  minBlocks: '2'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

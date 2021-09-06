@@ -1,0 +1,18 @@
+contentColumnType: string(1020)
+fieldGroup: c1e92987-b749-4931-8f92-f9e1e108c309 # SEO Metadata
+handle: seoKeywords
+instructions: 'Einzelne Wörter, kommagetrennt, keine Sonderzeichen, keine " oder '' verwenden'
+name: 'SEO Keywords'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

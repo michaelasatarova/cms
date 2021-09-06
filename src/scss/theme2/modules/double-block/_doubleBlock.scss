@@ -1,0 +1,48 @@
+.webkit-doubleBlock-container {
+  @apply theme('doubleBlock.color');
+}
+
+.webkit-doubleBlock-outer-grid {
+  @apply grid grid-cols-24 h-full;
+  @apply max-w-content mx-auto;
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+
+  @screen s{
+    min-height:400px;
+  }
+  @screen xs{
+    @apply h-full;
+  }
+}
+
+.webkit-doubleBlock-outer-cell {
+  @apply col-start-3 col-span-20;
+}
+
+.webkit-doubleBlock-grid {
+  @apply grid grid-cols-2 h-full;
+}
+
+.webkit-doubleBlock {
+  @apply s:row-start-1 xs:row-auto;
+}
+
+.webkit-doubleBlock:nth-child(1) {
+  &.webkit-double-image-container,
+  &.webkit-double-video-container,
+  &.webkit-double-text,
+  &.webkit-double-list {
+    @apply col-start-1 col-span-1;;
+    @apply xs:col-start-1 xs:col-span-2;
+  }
+}
+
+.webkit-doubleBlock:nth-child(2) {
+  &.webkit-double-image-container,
+  &.webkit-double-video-container,
+  &.webkit-double-text,
+  &.webkit-double-list {
+    @apply col-start-2 col-span-1;
+    @apply xs:col-start-1 xs:col-span-2;
+  }
+}

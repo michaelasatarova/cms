@@ -1,0 +1,63 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  ab955675-c7e0-480b-8c5d-4b2ccbc729b6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bdf6621c-ec21-443f-ae85-2233788747ef # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 97227a18-4c75-4244-bb28-a3a58338eee6 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  97227a18-4c75-4244-bb28-a3a58338eee6: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  bdf6621c-ec21-443f-ae85-2233788747ef: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: date
+name: Datum
+sortOrder: 3

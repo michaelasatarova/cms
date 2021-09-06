@@ -1,0 +1,62 @@
+.webkit-redactor-content {
+  @apply theme('redactor.p');
+
+  h1 {
+    @apply theme('redactor.h1');
+  }
+
+  h2 {
+    @apply theme('redactor.h2');
+  }
+
+  h3 {
+    @apply theme('redactor.h3');
+  }
+
+  h4 {
+    @apply theme('redactor.h4');
+  }
+
+  h5 {
+    @apply theme('redactor.h5');
+  }
+
+  p {
+    @apply theme('redactor.p');
+  }
+
+  /* em {
+    @apply theme('redactor.em');
+  } */
+
+  strong {
+   /*  @apply theme('redactor.strong'); */
+    @apply pt-4;
+  }
+
+  p{
+    @apply my-2;
+  }
+
+  ul{
+    @apply ml-8 my-5;
+  }
+
+  ol{
+    @apply list-decimal;
+    @apply ml-8 my-5;
+
+  }
+
+  ul{
+    li:before{
+      font-weight: 700; 
+      content: "●";
+      color:rgba(36, 139, 207);
+      margin-left: -17px;
+      margin-right: 10px;
+      position: relative;
+    }
+  }
+}
+

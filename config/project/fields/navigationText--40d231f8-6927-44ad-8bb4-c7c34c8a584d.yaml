@@ -1,0 +1,19 @@
+columnSuffix: fyaxvhqf
+contentColumnType: string(256)
+fieldGroup: e6072f5b-24cd-4730-92fd-25fe65062e61 # Common
+handle: navigationText
+instructions: ''
+name: 'Navigation Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 64
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

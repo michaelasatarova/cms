@@ -1,0 +1,18 @@
+contentColumnType: string(280)
+fieldGroup: c1e92987-b749-4931-8f92-f9e1e108c309 # SEO Metadata
+handle: seoTitle
+instructions: 'Muss mit einem Grossbuchstaben starten. Titel muss 40 - 70 Zeichen lang sein.'
+name: 'SEO Title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 70
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

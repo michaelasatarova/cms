@@ -1,0 +1,261 @@
+field: 63f00039-f7fe-404d-adf5-1b83bc001e5d # Intros
+fieldLayouts:
+  a905dbaf-217c-4f6f-bfbb-3d04c221d540:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bf5d535a-7dd7-4538-bd5c-f62c20b9383c # Hintergrundbild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f2f1ed3d-3614-4cef-bfb0-94caf2e5ce7e # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 807bfccd-b9b8-4294-a223-41ac24aef090 # Titel 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 864fa429-0262-4af8-8d51-e0508bcb30ff # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d5e54892-9b58-4ead-9025-6cbeda733c5a # Scroll Down Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  807bfccd-b9b8-4294-a223-41ac24aef090: # Titel 2
+    columnSuffix: null
+    contentColumnType: string(256)
+    fieldGroup: null
+    handle: heading2
+    instructions: 'Optionaler Teil des Titels, welcher in einer anderen Farbe angezeigt wird.'
+    name: 'Titel 2'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 64
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  864fa429-0262-4af8-8d51-e0508bcb30ff: # Text
+    columnSuffix: null
+    contentColumnType: string(1020)
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 255
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bf5d535a-7dd7-4538-bd5c-f62c20b9383c: # Hintergrundbild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgImg
+    instructions: ''
+    name: Hintergrundbild
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d5e54892-9b58-4ead-9025-6cbeda733c5a: # Scroll Down Button
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: scrollDownButton
+    instructions: 'Name von einem Anker Feld z.B. #akkordeon'
+    name: 'Scroll Down Button'
+    searchable: false
+    settings:
+      allowCustomText: '1'
+      allowTarget: ''
+      allowedLinkNames:
+        6: custom
+      autoNoReferrer: ''
+      defaultLinkName: user
+      defaultText: ''
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: typedlinkfield\fields\LinkField
+  f2f1ed3d-3614-4cef-bfb0-94caf2e5ce7e: # Titel
+    columnSuffix: null
+    contentColumnType: string(256)
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 64
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: action
+name: Action
+sortOrder: 3

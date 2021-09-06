@@ -1,0 +1,52 @@
+@use '../../buttons.scss';
+
+.webkit-double-list {
+  @apply self-center xs:order-last p-2/24 xs:px-2/24 h-full bg-color5 rounded-r-2xl xs:rounded-t-none xs:rounded-b-2xl;
+  /* box-shadow: 2px 4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06); */
+  @apply xs:relative z-10;
+  @apply relative;
+}
+
+.webkit-double-list-title {
+  @apply theme('doubleBlock.linkList.title.font');
+  @apply m:mb-1/24;
+}
+
+.webkit-double-list-link {
+  @apply py-4 m:py-2 xs:py-2;
+  @apply grid;
+  grid-template-columns: max-content 1fr;
+  @apply flex-row-reverse;
+  @apply theme('doubleBlock.linkList.borderColor');
+}
+
+@screen xs {
+  .webkit-double-list-link + .webkit-double-list-link {
+    @apply pt-4;
+  }
+}
+.webkit-double-list-label {
+  @apply self-center;
+  @apply theme('doubleBlock.linkList.label.font');
+}
+
+.webkit-double-list-button {
+  @apply mr-4 m:mr-2 order-first self-center text-color4;
+  @apply col-start-1 col-span-1;
+}
+
+.webkit-doubleBlock-list-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 8.333333333333332%;
+  left: 8.333333333333332%;
+
+  @screen xs {
+    position: relative;
+    transform: translate(0, 0);
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}

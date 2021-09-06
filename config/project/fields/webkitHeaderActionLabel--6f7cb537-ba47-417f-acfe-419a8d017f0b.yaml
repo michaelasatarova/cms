@@ -1,0 +1,18 @@
+contentColumnType: string(48)
+fieldGroup: 0380519c-f590-4d75-a243-ea83e3e554d5 # Header
+handle: webkitHeaderActionLabel
+instructions: ''
+name: 'Webkit Header Action Label'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 12
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

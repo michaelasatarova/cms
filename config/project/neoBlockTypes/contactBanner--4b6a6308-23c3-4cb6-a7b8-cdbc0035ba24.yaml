@@ -1,0 +1,52 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  8adb996e-f70b-45a5-a8e9-0f68605fc8e3:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e034f1c0-330e-4ffa-924e-b74982f95184 # Text Kurz
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e12c3611-0537-4be1-8b17-1e6b0970fd25 # Link Button
+            instructions: ''
+            label: 'Link 1'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 45ab70e4-8461-4197-a7e6-c64011de028e # Link Button 2
+            instructions: ''
+            label: 'Link 2'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b9de0d7d-11e3-4086-8085-5a5d3aa003d2 # Bild
+            instructions: ''
+            label: Hintergrundbild
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Kontakt Banner'
+        sortOrder: 1
+handle: contactBanner
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Kontakt'
+sortOrder: 8
+topLevel: true

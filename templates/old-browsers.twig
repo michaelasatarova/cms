@@ -1,0 +1,86 @@
+{% extends "_layouts/site" %}
+
+
+{% block bodyAttributes %}
+id="old-browsers"
+{% endblock bodyAttributes %}
+
+
+{% block header %}
+{% include craft.webkit.template("_includes/old-browsers/header.twig") %}
+{% endblock header %}
+
+
+{% block content %}
+<div class="px-sidespacing">
+  <div class="webkit-heading-container">
+    <div class="webkit-heading">
+      <h1 class="webkit-heading-cell">{{ 'OLD_BROWER_HEADING'|t }}</h1>
+    </div>
+  </div>
+
+  <div class="webkit-text-container">
+    <div class="webkit-text">
+      <div class="webkit-redactor-content webkit-text-cell">
+        {{ 'OLD_BROWSER_LEAD'|t|nl2br }}
+
+        <div class="text-center">
+          <ul class="mt-10 browsers-list">
+            <li>
+              <a href="https://www.mozilla.org/de/firefox/new/" target="_blank">
+                <img class="browser-logo"
+                     src="{{ alias('@web/assets/icons/old-browsers/firefox.svg') }}"
+                     alt="Mozilla Firefox">
+                Mozilla Firefox
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/chrome/" target="_blank">
+                <img class="browser-logo"
+                     src="{{ alias('@web/assets/icons/old-browsers/chrome.svg') }}"
+                     alt="Google Chrome">
+                Google Chrome
+              </a>
+            </li>
+            <li>
+              <a href="https://www.opera.com/" target="_blank">
+                <img class="browser-logo"
+                     src="{{ alias('@web/assets/icons/old-browsers/opera.svg') }}"
+                     alt="Opera">
+                Opera
+              </a>
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/edge" target="_blank">
+                <img class="browser-logo"
+                     src="{{ alias('@web/assets/icons/old-browsers/edge.svg') }}"
+                     alt="Microsoft Edge">
+                Microsoft Edge
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+
+{% block preFooter %}{% endblock preFooter %}
+
+
+{% block footer %}
+{% include craft.webkit.template("_includes/old-browsers/footer") %}
+{% endblock footer %}
+
+
+{% block postFooter %}{% endblock postFooter %}
+
+
+{% block overlays %}{% endblock overlays %}
+
+
+{% block endBody %}
+{% include "_includes/footer-scripts" %}
+{% endblock endBody %}

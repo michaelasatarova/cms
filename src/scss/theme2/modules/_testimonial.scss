@@ -1,0 +1,84 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+.webkit-testimonial-outer-grid {
+  @apply max-w-content mx-auto py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-testimonial-container {
+  @apply theme('testimonial.color');
+}
+
+.webkit-testimonial-grid {
+  @apply grid grid-cols-24;
+  @screen xs {
+    grid-template-rows: max-content max-content max-content;
+  }
+}
+
+.webkit-testimonial {
+  @apply flex;
+}
+
+.webkit-testimonial-title {
+  @apply text-center justify-self-center w-max;
+ /*  height: max-content; */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  @apply row-start-5 row-span-1;
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-2 xs:col-span-22 xs:row-start-2 xs:row-end-3 xs:text-center xs:mb-2;
+  @apply theme('testimonial.textBlock.title.color');
+  @apply theme('testimonial.textBlock.title.fontSize');
+}
+
+.webkit-testimonial-text {
+  @apply mb-4 self-end text-center justify-self-center;
+  @apply row-start-4 row-span-1;
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-3 xs:col-span-20 xs:row-start-3 xs:row-end-4 xs:text-center;
+  @apply theme('testimonial.textBlock.text.color');
+  @apply theme('testimonial.textBlock.text.fontSize');
+}
+
+.webkit-testimonial-button-container {
+  @apply col-start-3 col-span-20;
+  @apply row-start-6 row-span-1;
+  @apply mt-4 justify-self-center;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-1 xs:col-span-24 xs:row-start-4 xs:row-end-5 xs:justify-self-center;
+}
+
+.webkit-testimonial-image-aspect {
+  @apply pt-0 rounded-2xl;
+}
+
+.webkit-testimonial-image {
+  @extend .bg-img__square;
+}
+
+.webkit-testimonial-image-container {
+  @apply row-start-1 row-end-2 overflow-hidden relative z-10 mb-4 rounded-2xl;
+  @apply col-start-11 col-span-4 self-center;
+  @apply m:col-start-11 m:col-span-4;
+  @apply s:col-start-11 s:col-span-4;
+  @apply xs:col-start-8 xs:col-span-10 xs:row-start-1 xs:row-end-2 xs:self-center;
+}
+
+.webkit-testimonial-outer-grid {
+  .agile__dots {
+    position: relative;
+    top: 0;
+    display: inline-block !important;
+
+    @screen xs {
+      top: -1rem;
+    }
+  }
+
+  .agile__nav-button {
+    display: none;
+  }
+}

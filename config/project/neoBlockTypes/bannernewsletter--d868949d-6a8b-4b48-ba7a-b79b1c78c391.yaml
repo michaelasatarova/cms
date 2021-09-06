@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  69796970-1477-48ca-9f68-4aacabb6d05d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e034f1c0-330e-4ffa-924e-b74982f95184 # Text Kurz
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: bannernewsletter
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Newsletter'
+sortOrder: 7
+topLevel: true

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: e6072f5b-24cd-4730-92fd-25fe65062e61 # Common
+handle: webkitLead
+instructions: ''
+name: 'Webkit Lead'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

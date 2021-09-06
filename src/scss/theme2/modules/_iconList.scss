@@ -1,0 +1,123 @@
+.webkit-iconList-container {
+  @apply theme('iconList.color');
+  @apply py-verticalSpacing l:py-1/24 s:py-2/24 rounded-2xl s:pb-0;
+}
+
+.webkit-iconList {
+  @apply grid grid-cols-24;
+  @apply col-start-3 col-span-20;
+  @apply max-w-content mx-auto;
+}
+
+.webkit-iconList-item-grid {
+  @apply grid;
+  @apply justify-center;
+  @apply s:flex;
+  /* grid-template-columns: max-content 1fr; */
+}
+
+.webkit-iconList-cell {
+  @apply col-start-3 col-span-20;
+  @apply m:col-start-3 m:col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply s:py-5;
+}
+
+.webkit-iconList-item-container {
+  @apply flex items-center;
+  @apply s:flex-col s:items-start;
+}
+
+.webkit-iconList-item {
+  @apply py-2;
+  @apply text-center;
+  flex-basis: 30%;
+
+  &:nth-child(even) {
+    /* margin-left: 10%; */
+
+    @screen m {
+      flex-basis: 47.5%;
+      margin-left: 5%;
+    }
+
+    @screen s {
+      flex-basis: 100%;
+      @apply ml-0;
+    }
+  }
+
+  @screen s {
+    flex-basis: 100%;
+  }
+}
+
+.webkit-iconList-iconContainer {
+  @apply relative self-center bg-contain bg-no-repeat;
+  @apply theme('iconList.iconContainerSize');
+  /* @apply theme('iconList.iconBackgroundColor'); */
+  @apply left-1/2 s:left-0;
+
+  transform: translate(-50%);
+
+  @screen s {
+    transform: translate(0%);
+    @apply s:mr-5;
+  }
+}
+
+.webkit-iconList-text {
+  @apply self-center justify-self-start s:text-left;
+  @apply theme('iconList.font');
+}
+
+.webkit-iconList-icon {
+  @apply relative;
+  @apply theme('iconList.iconColor');
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.webkit-iconList-heading {
+  @apply pb-1/24;
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply theme('iconList.headingFont');
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+.webkit-heading-underline {
+  @apply relative;
+
+  &::after {
+    @apply bg-color4 w-6 h-1 absolute bottom-7 left-0;
+    @apply rounded-sm;
+    content: '';
+  }
+}
+
+.webkit-iconList-item-heading {
+  @apply pt-2 pb-1 s:pt-0;
+  @apply theme('iconList.item.headingFont');
+}
+
+.webkit-iconList-item-subtitle {
+  @apply theme('iconList.item.subtitleFont');
+}
+
+.webkit-iconList-button-container {
+  @apply mt-5;
+  @apply col-start-3 col-span-20;
+  @apply m:col-start-3 m:col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-iconList-button {
+  @apply theme('iconList.button');
+}

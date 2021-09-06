@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  e2cefead-d5f5-436c-a3b6-d2e22d34ed6b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 07a51f33-7e99-4cf8-8945-9c51e38fba91 # Slides
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Slides
+        sortOrder: 1
+handle: slideshow
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Slider Bild, Text & Link'
+sortOrder: 11
+topLevel: true

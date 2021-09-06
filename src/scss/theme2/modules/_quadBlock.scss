@@ -1,0 +1,82 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+.webkit-quad-block-container {
+  @apply theme('quadBlock.color');
+  @apply relative z-10;
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+.webkit-quad-block-parent {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+}
+
+.webkit-quad-block {
+  @apply col-start-3 col-span-10;
+  @apply s:col-start-3 s:col-span-21 s:pb-4 w-auto mr-4;
+
+  &:nth-child(2) {
+    @apply col-start-13 col-span-10;
+    @apply s:col-start-3 s:col-span-21 justify-end;
+  }
+}
+
+.webkit-quad-inner-grid {
+  @apply grid grid-cols-12 s:grid-cols-24 justify-items-stretch h-full bg-color5 rounded-2xl;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+.webkit-quad-block-image-cell {
+  @apply overflow-hidden rounded-l-2xl;
+  @apply col-start-1 col-span-6;
+  @apply s:col-start-1 s:col-span-10 s:px-0;
+}
+
+.webkit-quad-block-image {
+  @apply h-full rounded-l-2xl;
+  @extend .bg-img;
+}
+
+.webkit-quad-block-content {
+  @apply col-start-7 col-span-6 pr-4;
+  @apply pl-6;
+  @apply s:col-start-12 s:col-span-12 s:px-0 s:py-1/24;
+}
+
+.webkit-quad-block-grid {
+  @apply grid h-full;
+  grid-template-rows: 1fr;
+  > * {
+    @apply col-start-1 col-span-1 row-start-3;
+  }
+}
+
+.webkit-quad-block-image-aspect {
+  @apply theme('quadBlock.imageAspect');
+}
+
+.webkit-quad-block-grid-text-container {
+  @apply row-start-1 row-span-1;
+  @apply pt-4/1;
+  @apply s:pt-2/24 xs:pt-1/24;
+}
+
+.webkit-quad-block-title {
+  @apply theme('quadBlock.title.font') pb-1 s:pb-1;
+}
+
+.webkit-quad-block-text {
+  @apply theme('quadBlock.text.font');
+  @apply pr-1/24;
+}
+
+.webkit-quad-block-button-cell {
+  @apply row-start-5 row-span-1 pt-2;
+}
+
+.webkit-quad-block-button {
+  @apply self-end justify-end flex;
+  @apply xs:mr-0 pb-4;
+}

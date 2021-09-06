@@ -1,0 +1,91 @@
+@use '../../images.scss';
+
+.webkit-double-video-container {
+  @apply self-center overflow-hidden xs:order-first;
+  @apply relative h-full xs:h-auto;
+}
+
+.webkit-double-video {
+  @apply absolute;
+  width: 1280px;
+  height: 720px;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  @screen xl {
+    width: 1200px;
+    height: 675px;
+  }
+  @screen l {
+    @apply w-full h-full;
+  }
+}
+
+.webkit-double-video-thumbnail {
+  @apply overflow-hidden h-full relative cursor-pointer rounded-l-2xl xs:rounded-t-2xl xs:rounded-b-none;
+}
+
+.webkit-double-video-play {
+  @apply absolute text-center;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.webkit-double-video-play-button {
+  @apply theme('doubleBlock.media.playButton');
+}
+
+.webkit-double-video-play-text {
+  @apply theme('doubleBlock.media.playText');
+}
+
+.webkit-double-video-thumbnail-aspect {
+  @extend .bg-img;
+  @apply bg-cover;
+  @apply theme('doubleBlock.media.mediaAspect') h-full;
+}
+
+.webkit-double-video-overlay-container {
+  @apply absolute;
+  @apply max-w-content l:h-0 l:pt-16/9;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.webkit-double-video-overlay {
+  @apply hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  @apply cursor-pointer;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.webkit-double-video-overlay-close {
+  position: absolute;
+  top: -20rem;
+  right: -1rem;
+  @apply theme('doubleBlock.media.closeIcon');
+  @screen xl {
+    top: -20rem;
+    right: 0;
+  }
+  @screen l {
+    top: -12%;
+    right: 10px;
+  }
+  @screen xs {
+    top: -14%;
+  }
+}

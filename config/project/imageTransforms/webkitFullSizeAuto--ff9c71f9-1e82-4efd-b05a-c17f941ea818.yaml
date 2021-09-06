@@ -1,0 +1,9 @@
+format: png
+handle: webkitFullSizeAuto
+height: null
+interlace: none
+mode: crop
+name: 'Full Size Auto'
+position: center-center
+quality: null
+width: 1920

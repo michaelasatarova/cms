@@ -1,0 +1,34 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  544fc69f-a3ec-4f42-a93e-2f5e6a32ff1d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: Titel
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0c6cff32-5be7-4248-91b5-1f65d482bfbc # Icon Liste
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Icon Liste'
+        sortOrder: 1
+handle: iconlist
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Icon & Text'
+sortOrder: 9
+topLevel: true

@@ -1,0 +1,84 @@
+childBlocks:
+  - formGroup
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  5485554e-47fd-48c6-b00b-abe31c8b16cc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1ce146bc-2bda-4768-9147-9b21e618594f # Titel
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 015c3089-60ea-4cd8-bda7-f01b41764cd0 # Lead Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            style: tip
+            tip: 'Es können mehrere E-Mails eingegeben werden. Mehrere E-Mails müssen mit einem "," getrennt werden z.B. test@test.com, test@test2.com '
+            type: craft\fieldlayoutelements\Tip
+          -
+            fieldUid: d8c6065c-885e-4cba-b014-0a5a9842bc85 # Empfänger
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8d236ebd-2e93-4c6d-abd6-5f8ee2fbbefd # CC
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2e204915-3391-48a4-bb8c-a7ddfc9d1c19 # BCC
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9239e30e-a13d-4ae7-a3de-284c9f4c5585 # Betreff
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d450cbf5-99e5-4fa5-9484-7581fc28247b # Senden Button
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Formular
+        sortOrder: 1
+handle: form
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Formular
+sortOrder: 20
+topLevel: true

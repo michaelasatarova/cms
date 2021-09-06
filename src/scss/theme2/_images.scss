@@ -1,0 +1,81 @@
+%bg-img {
+  background-position: center center;
+  @apply bg-cover bg-no-repeat;
+}
+
+%bg-img__contain {
+  background-position: center center;
+  @apply bg-contain bg-no-repeat;
+}
+
+// helper class for additional <img/> tags
+// Use this class on the <img/> tag, when the actual image is shown in "background-image"
+.img-hidden {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.bg-img {
+  @extend %bg-img;
+
+  &__16-9 {
+    @extend %bg-img;
+    padding-top: (9/16 * 100%);
+  }
+
+  &__16-10 {
+    @extend %bg-img;
+    padding-top: (10/16 * 100%);
+  }
+
+  &__4-3 {
+    @extend %bg-img;
+    padding-top: (3/4 * 100%);
+  }
+
+  &__2-1 {
+    @extend %bg-img;
+    padding-top: (1/2 * 100%);
+  }
+
+  &__square {
+    @extend %bg-img;
+    padding-top: (1/1 * 100%);
+    border-radius: 1rem;
+  }
+
+  &__round {
+    @apply bg-center bg-cover bg-no-repeat;
+    width: 100%;
+    border-radius: 666px;
+    padding-top: 100%;
+  }
+
+  &__contain {
+    @extend %bg-img__contain;
+  }
+
+  &__center-top {
+    @apply bg-top;
+  }
+
+  &__bg {
+    @extend %bg-img;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      @apply bg-color1;
+      opacity: 0.5;
+    }
+  }
+
+}

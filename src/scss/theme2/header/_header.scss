@@ -1,0 +1,259 @@
+@use '../buttons.scss';
+
+%header-config {
+  @apply grid grid-cols-24 w-full top-0;
+  z-index: 9999;
+  @apply h-12;
+}
+
+.webkit-header {
+  @extend %header-config;
+  @apply theme('header.headerFixed');
+  height: 0 !important;
+}
+
+.webkit-header-cell {
+  @apply col-start-1;
+  grid-column-end: 25;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 10px 2px;
+  @apply theme('header.color');
+}
+
+.webkit-header-inner-grid {
+  @apply grid grid-cols-24;
+}
+
+.webkit-header-logo {
+  @apply self-center col-start-1 col-span-7 justify-self-start;
+  @apply m:col-start-4 m:col-span-4;
+  @apply flex justify-between w-screen;
+}
+
+.webkit-header-logo-image {
+  @apply theme('header.logoHeight');
+  @apply w-auto h-full;
+  @apply fill-current mr-2;
+}
+
+//navigation menu left
+.webkit-navi{
+  @apply p-3;
+  @apply ml-2;
+}
+.webkit-navi-links{
+  @apply text-color4 pr-3 font-bold;
+  font-family: "Eurostyle";
+
+  
+  a:hover{ 
+   color:black; 
+  }
+}
+
+//logo2
+.webkit-header-logo2-image{
+  @apply flex;
+  @apply relative left-5 top-2 s:left-2 s:top-3 m:hidden;
+  width: 45px;
+  height: 45px;
+  @screen s {
+    width: 25px;
+    height: 25px
+  }
+
+  @screen m {
+    margin:10px;
+    margin-right:0;
+  }
+  @screen xs {
+    padding:0 3px;
+    margin-top:0;
+    margin-left:5px;
+  }
+
+}
+
+
+
+.webkit-header-button {
+  @extend .webkit-btn__big;
+  @apply text-center col-start-22 col-span-2 justify-self-end;
+  @apply col-start-20 col-span-2 xl:col-start-21 xl:col-span-3;
+  @apply m:col-start-19 m:col-span-4;
+  @apply xs:col-start-15 xs:col-span-6;
+}
+
+.webkit-header-navigation-container {
+  display: none;
+}
+
+@screen theme('header.menu.forceIconBreakpoint') {
+  .webkit-header-navigation-container {
+    display: block;
+    @apply justify-self-end col-start-8 col-end-24;
+    @apply s:col-start-13 s:col-end-24;
+    @screen xs{
+      height:40px;
+    }
+  }
+}
+
+.webkit-menu-icon {
+  @apply inline-block z-50 cursor-pointer h-full h-12;
+  @apply theme('header.menu.iconColor'); 
+}
+
+//contact
+.webkit-header-contact{
+  @apply p-4 flex xs:p-2;
+  @apply text-color1;
+  @apply text-sm;
+  
+  &:hover{
+    color: black;
+  }
+}
+
+@screen minL {
+  .webkit-header-button:hover {
+    @apply theme('buttons.hovercolorLarge');
+  }
+}
+
+.webkit-header-navigation-link {
+  @apply theme('header.font') inline-block;
+
+  @apply cursor-pointer;
+
+  &:after {
+    content: '';
+    @apply transition-opacity duration-300;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    @apply theme('header.hoverUnderline');
+  }
+
+  @screen minL {
+    &:hover {
+      @apply theme('header.hoverColor');
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.webkit-header-navigation-text {
+  @apply theme('header.font') inline-block;
+
+  &:after {
+    content: '';
+    @apply transition-opacity duration-300;
+    opacity: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+.webkit-header-placeholder {
+  @extend %header-config;
+}
+
+.webkit-language-switcher-container {
+  display: none;
+}
+
+.webkit-language-switcher {
+  @apply theme('header.desktopMenu.font.color');
+  @apply theme('header.desktopMenu.font.size');
+  @screen theme('header.menu.forceIconBreakpoint') {
+    @apply theme('header.languageSwitcher.font');
+  }
+  ul {
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      > a {
+        color: inherit;
+      }
+
+      & + li {
+        @apply ml-4 xs:ml-2;
+      }
+    }
+  }
+}
+
+.webkit-current-language {
+  @apply theme('header.languageSwitcher.currentLanguage');
+}
+
+.webkit-header-nav-buttons {
+  @apply flex h-full;
+  @apply text-color1;
+}
+
+.nav-link-right{
+  @apply text-color1;
+
+  &:hover{
+    @apply text-black;
+  }
+}
+.nav-link-right-home{
+  @apply text-color2;
+
+  &:hover{
+    @apply text-black;
+  }
+}
+
+
+.shadow-right {
+  box-shadow: inset -23px -2px 24px -35px rgba(0, 0, 0, 0.26);
+}
+
+.webkit-header-button-big {
+  @apply h-full w-auto px-4 flex;
+  // @apply text-f6m l:text-f7l;
+  @apply text-sm;
+  @apply text-color1;
+
+  &:hover{
+    color:black;
+  }
+  &.active {
+    @apply bg-color4;
+    
+    div {
+      @apply text-color2;
+    }
+  }
+
+  &.active-mobile {
+    @apply bg-color2;
+
+    div {
+      @apply text-color1;
+    }
+  }
+}
+
+.webkit-header-button-small {
+  @apply h-full w-12 xs:w-8 flex;
+  @apply bg-color3;
+}
+
+.header-wrap-right-navi{
+  @apply flex items-center justify-end;
+  width: 70%;
+}
+
+.close-icon{
+  position: relative;
+  background: transparent;
+  z-index: 100;
+}
+

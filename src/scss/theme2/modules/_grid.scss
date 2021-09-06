@@ -1,0 +1,156 @@
+@use '../images.scss';
+
+%grid-alignment {
+  @apply justify-start text-left;
+}
+
+// ------------------------------------------------
+// Grid title container
+
+.webkit-grid-title {
+  @apply text-left;
+  @apply col-start-3 col-span-20;
+  padding-bottom: 2.1rem;
+  @apply theme('grid.headingFont');
+
+  @screen m {
+    padding-bottom: 1.65rem;
+  }
+
+  @screen xs {
+    padding-bottom: 1.25rem;
+  }
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+// ------------------------------------------------
+// Outer grid container
+
+.webkit-grid-container {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-grid-container-cell {
+  @apply col-start-3 col-span-20;
+  @apply theme('grid.backgroundColor');
+}
+
+// ------------------------------------------------
+// Grid container for items
+
+.webkit-grid-parent {
+  @apply grid justify-items-stretch items-stretch gap-6 m:gap-5 xs:gap-3;
+  @apply theme('grid.cols');
+}
+
+.webkit-grid-item {
+  @apply col-span-1 row-span-1;
+  @apply relative z-10 rounded-2xl bg-color5;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+// ------------------------------------------------
+// Grid in item cell
+
+.webkit-grid-item-grid {
+  @apply grid grid-cols-1 overflow-hidden h-full;
+  grid-template-rows: max-content max-content max-content max-content 1fr max-content;
+
+  > * {
+    @apply col-start-1 col-span-1;
+  }
+}
+
+// ------------------------------------------------
+// Item grid rows
+
+// ------------------------------------
+// row 1 - 6 (background)
+.webkit-grid-cell-background {
+  @apply row-start-1 row-span-6;
+  @apply theme('grid.backgroundColorCell');
+}
+
+// ------------------------------------
+// row 1
+.webkit-grid-cell-img {
+  @apply row-start-1 row-span-1 rounded-t-2xl;
+  @apply overflow-hidden;
+}
+
+.webkit-grid-image {
+  @apply w-full rounded-t-2xl;
+  @extend .bg-img;
+  @apply theme('grid.aspectRatio');
+}
+
+// ------------------------------------
+// row 2
+.webkit-grid-spacing-above-text {
+  @apply row-start-2 row-span-1;
+  @apply pb-4;
+}
+
+// ------------------------------------
+// row 3
+.webkit-grid-cell-heading2 {
+  @apply row-start-3 row-span-1 pb-1;
+}
+
+.webkit-grid-heading2 {
+  @apply px-2/24;
+  @extend %grid-alignment;
+  @apply theme('grid.heading2.font');
+}
+
+
+.webkit-grid-datum {
+  @apply px-2/24 pt-4;
+  @extend %grid-alignment;
+  @apply text-color1 text-f5 font-bold;
+}
+
+.webkit-grid-news-heading {
+  @apply row-start-4 row-span-1;
+  @apply px-2/24 pt-1 pb-2;
+  @extend %grid-alignment;
+  @apply theme('grid.heading.font');
+}
+
+// ------------------------------------
+// row 4
+.webkit-grid-heading {
+  @apply row-start-4 row-span-1;
+  @apply px-2/24 pt-4 pb-2;
+  @extend %grid-alignment;
+  @apply theme('grid.heading.font');
+}
+
+// ------------------------------------
+// row 5
+.webkit-grid-text {
+  @apply row-start-5 row-span-1;
+  @apply pb-4 px-2/24;
+  @extend %grid-alignment;
+  @apply theme('grid.text.font');
+}
+
+// ------------------------------------
+// row 6
+.webkit-grid-button-cell {
+  @apply row-start-6 row-span-1;
+}
+
+.webkit-grid-button {
+  @apply self-end flex mx-4 mb-4 flex-row-reverse;
+  @extend %grid-alignment;
+}
+
+.webkit-grid-load-more-button-container {
+  @apply flex justify-center content-center p-4;
+}

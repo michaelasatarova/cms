@@ -1,0 +1,131 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+.webkit-slideshow-container {
+  @apply theme('slider.color');
+  @apply grid grid-cols-24 relative;
+}
+.webkit-slideshow {
+  @apply col-start-1 col-span-24 overflow-hidden;
+}
+
+.webkit-slide-text-container {
+  @apply grid self-center absolute top-0 w-full;
+  @apply col-start-1 col-end-1 row-start-1 row-end-1 pl-4/24 pr-6/24 s:px-2/24;
+  grid-template-rows: max-content max-content max-content;
+  /* @apply py-10/24; */
+  height: auto;
+  top: 60%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.webkit-slide-button-container {
+  @apply text-left pt-1/24 ;
+}
+
+.webkit-slide-button {
+  @apply inline-block;
+}
+
+.webkit-slide-image {
+  @extend .bg-img__bg;
+  @apply theme('slider.aspectRatio');
+}
+
+.webkit-slide-image.no-overlay::after {
+  opacity: 0;
+}
+
+.webkit-slide-bg {
+  @apply theme('slider.overlayColor');
+}
+
+.webkit-slide-heading {
+  padding-bottom: .75rem;
+  @apply m:pb-4;
+  @screen xs {
+    padding-bottom: 0.75rem;
+    @apply mx-1/24;
+  }
+  @apply select-none text-left;
+  @apply theme('slider.heading.font');
+}
+
+.webkit-slide-heading-single {
+  @apply self-end;
+  @apply mb-3/24;
+}
+
+.webkit-slide-text {
+  @apply select-none text-left xs:mx-1/24;
+  @apply theme('slider.text.font');
+}
+
+.slide {
+  overflow: hidden;
+  @apply relative h-full;
+}
+
+.agile__actions {
+  @apply w-full block text-center;
+  height: 100%;
+  bottom: 0;
+}
+
+.agile__dot {
+  @apply mx-1 inline-block;
+  button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    @apply theme('slider.dots.color');
+
+    @screen xs {
+      height: 10px;
+      width: 10px;
+    }
+  }
+}
+
+.agile__dot--current {
+  button {
+    @apply theme('slider.dots.activeColor');
+  }
+}
+
+.agile__dots {
+  position: relative;
+  top: -2rem;
+  display: inline-block !important;
+
+  @screen xs {
+    top: 0;
+  }
+}
+
+.agile__slide {
+  .agile__nav-button {
+    display: none !important;
+  }
+
+  .agile__dots {
+    display: inline-block !important;
+    height: 50px;
+    width: 150px;
+  }
+}
+
+.webkit-slideshow-container {
+  .agile__nav-button {
+    display: none;
+  }
+}

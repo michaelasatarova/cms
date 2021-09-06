@@ -1,0 +1,89 @@
+// only add styles within the "#old-browsers" selector!!!
+body#old-browsers {
+
+  .webkit-header {
+    position: static;
+  }
+
+  .browsers-list {
+    display: inline-block;
+    width: auto;
+    margin: 1.5rem auto;
+    columns: 2;
+    list-style: none;
+
+    > li {
+      display: block;
+      text-align: left;
+      padding: 0;
+
+      a {
+        display: block;
+        padding: .5rem;
+        overflow: hidden;
+        font-size: 1.25rem;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color .2s;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, .16);
+        }
+      }
+
+      & + li {
+        margin-top: 1rem;
+      }
+    }
+
+    @screen s {
+      columns: 1;
+    }
+  }
+
+  .browser-logo {
+    display: inline-block;
+    width: 64px;
+    height: auto;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+
+  .webkit-header,
+  .webkit-text,
+  .webkit-main-footer,
+  .webkit-footer,
+  .webkit-heading {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .webkit-header-logo {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+  }
+
+  .webkit-text-cell {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 14;
+  }
+
+  .webkit-footer-module-contact {
+    -ms-grid-column: 19;
+    -ms-grid-column-span: 4;
+  }
+
+  .webkit-footer-cell {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 20;
+  }
+
+  .webkit-footer-module-logo-text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  .webkit-heading-cell {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 14;
+  }
+}

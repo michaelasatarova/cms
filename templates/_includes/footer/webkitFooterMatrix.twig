@@ -1,0 +1,41 @@
+<!-- footer -->
+{# <div class="webkit-footer">
+		<div class="webkit-footer-cell">
+		  <!-- footer menu  -->
+				<div class="webkit-main-footer">
+						{% set blocks = [
+							'Logotext',
+							'Nav',
+							'Hours',
+							'Kontakt',
+							]
+						%}
+						{% for matrixBlock in blocks %}
+							{% include craft.webkit.template("_includes/footer/modules/webkitFooterModule" ~ matrixBlock ~ ".twig"
+						) with {
+							matrixBlock: footer
+						} %}
+						{% endfor %}
+				</div>
+
+				<!-- footer main img -->
+			  <div class="webkit-footer-map-image">
+					{% set image = footer.grosseBild.one() %}
+					  <img src="{{ image.url()|default('') }}" alt="{{ image.title|default('') }}" class="w-full">
+				</div> 
+
+
+				<!-- subfooter  -->
+				<div class="webkit-sub-footer-container">
+					{% include craft.webkit.template("_includes/footer/modules/webkitFooterModuleImpressum") %}
+					<div class="binary-backlink">concept & code by
+						<a href="https://www.binaryone.ch" target="_blank">binary one</a>
+					</div>
+					{% if footer.webkitFooterSocialmedia.all()|length > 0 and footer.webkitFooterSocialmedia is defined %}
+						{% include craft.webkit.template("_includes/footer/modules/webkitFooterModuleSocialmedia") %}
+					{% endif %}
+				</div>
+
+		</div>
+</div>
+ #}

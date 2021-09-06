@@ -1,0 +1,84 @@
+{% set navItems = navigation.navigationMehrstufig.level(1).all() %}
+<div class="webkit-header-nav-overlay" v-on:click.stop>
+	{% include craft.webkit.template("_includes/header/header-placeholder") %}
+	<div class="webkit-header-nav-overlay-grid
+	">
+	
+		<div class="hidden xl:flex flex-col  ml-20 mt-12 xs:ml-12 h-12">
+			<a href="{{ header.webkitHeaderActionLink.getUrl()|default("") }}" 
+				 class="webkit-header-button-big text-f6 capitalize p-0">
+				<div class="nav-link-text-2 pb-6 text-color2">
+					{{ header.webkitHeaderActionLink.getCustomText()|default("") }}
+				</div>
+			</a>
+			<a href="{{ header.linkButton.getUrl()|default("") }}" 
+				 class="webkit-header-button-big text-f6 capitalize p-0 ">
+				<div class="nav-link-text-2 pb-6 text-color2">
+					{{ header.linkButton.getCustomText()|default("") }}
+				</div>
+			</a>
+		</div>
+		<ul class="webkit-header-nav-item-list pt-9">
+			{% for navItem in navItems %}
+				<li class="webkit-header-nav-item">
+					{% if navItem.children.all()|length %}
+						<div class="sub-nav-btn-show -ml-12 mb-1 self-center" v-subnav:toggle>
+							<i class="fal fa-arrow-circle-left"></i>
+						</div>
+					{% endif %}
+
+					{% if navItem.type == 'navigationStufe1' %}
+
+						{% set navLink = navItem.linkButton %}
+						{% if navLink %}
+							{% if navLink.type == 'entry' %}
+								{% set activeLink = (entry.id|default(0) is same as(navLink.getElement().id|default(0))) %}
+								<a class="webkit-header-navigation-link self-center w-max {{ activeLink ? 'webkit-header-navigation-activeLink' : '' }}" href="{{ navLink.getUrl() }}">
+									{{ navLink.getCustomText() }}
+								</a>
+							{% elseif navLink.type == 'custom' %}
+								<a class="webkit-header-navigation-link" href="{{ navLink.getUrl()|default("") }}">
+									{{ navLink.getCustomText() }}
+								</a>
+							{% else %}
+								<a class="webkit-header-navigation-link" href="{{ navLink.getUrl()|default("") }}" target="_blank">
+									{{ navLink.getCustomText()|default("") }}
+								</a>
+							{% endif %}
+						{% endif %}
+	
+					{% elseif navItem.type == 'navigationStufe1OhneLink' %}
+						<div class="webkit-header-navigation-link self-center w-max" v-subnav:toggle>
+							{{ navItem.navigationText }}
+						</div>
+					{% endif %}
+
+ 
+					<!-- Sub Nav -->
+					{% if navItem.children.all()|length %}
+						<div class="sub-nav-cell" v-subnav:width>
+							<ul class="sub-nav">
+								<div class="grid">
+									{% if navItem.type == 'navigationStufe1' %}
+										<div class="sub-nav-parent-title">{{ navLink.getCustomText()|default("") }}</div>
+										<i class="fal fa-arrow-circle-right mobile-subnav-close" v-subnav:toggle></i>
+									{% elseif navItem.type == 'navigationStufe1OhneLink' %}
+										<div class="sub-nav-parent-title">{{ navItem.navigationText }}</div>
+										<i class="fal fa-arrow-circle-right mobile-subnav-close" v-subnav:toggle></i>
+									{% endif %}
+								</div>
+								{% for subNavItem in navItem.children.all() %}
+									<li class="sub-nav-item">
+										{% set activeSubLink = (entry.id|default(0) is same as(subNavItem.linkButton.getElement().id)) %}
+										<a class="sub-nav-link  {{ activeSubLink ? 'sub-nav-active-link' : '' }}" href="{{ subNavItem.linkButton.getUrl()|default("") }}">{{ subNavItem.linkButton.getText()|default("") }}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					{% endif %}
+				</li>
+			{% endfor %}
+						<li class="text-color2 mt-5 hidden m:block">	{{ header.tel.value|default("") }} </li>
+		</ul>	
+	</div>
+</div>

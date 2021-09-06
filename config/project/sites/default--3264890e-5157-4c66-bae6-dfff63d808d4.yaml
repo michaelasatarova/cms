@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de-CH
+name: 'craft webkit'
+primary: true
+siteGroup: 0b254874-1508-427b-8a4b-0fdf47a6fb56 # craft webkit
+sortOrder: 1

@@ -1,0 +1,91 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  68039182-e537-4f2e-8fda-e4c97ef5a698:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 19d13221-a397-409b-8175-f17c2327b5cb # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 48aae693-1783-4941-a26b-0af27eb48b5d # Platzhalter Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 60cf4141-3aaf-4f10-b409-6af0bf8ac2e6 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  19d13221-a397-409b-8175-f17c2327b5cb: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  48aae693-1783-4941-a26b-0af27eb48b5d: # Platzhalter Text
+    contentColumnType: text
+    fieldGroup: null
+    handle: placeholder
+    instructions: ''
+    name: 'Platzhalter Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  60cf4141-3aaf-4f10-b409-6af0bf8ac2e6: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: email
+name: E-Mail
+sortOrder: 2

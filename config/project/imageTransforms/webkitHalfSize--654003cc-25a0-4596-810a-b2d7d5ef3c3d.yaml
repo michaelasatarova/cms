@@ -1,0 +1,9 @@
+format: jpg
+handle: webkitHalfSize
+height: null
+interlace: none
+mode: crop
+name: 'Half Size'
+position: center-center
+quality: null
+width: 1024

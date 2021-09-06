@@ -1,0 +1,13 @@
+.webkit-imageBanner {
+  @apply col-start-3 col-span-20;
+  @apply theme('imageBanner.aspectRatio');
+}
+
+.webkit-imageBanner-grid {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+}
+
+.webkit-imageBanner-container {
+  @apply theme('imageBanner.color');
+}

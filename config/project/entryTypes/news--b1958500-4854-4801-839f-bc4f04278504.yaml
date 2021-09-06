@@ -1,0 +1,105 @@
+fieldLayouts:
+  3042f909-e2fc-4bce-8d5f-d73965471a07:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4a67ddc4-6d41-4114-83b9-be2ec2462146 # Webkit Lead
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c4b56721-7e1c-4d11-b7dd-49e78b8ca084 # Webkit Hauptbild
+            instructions: null
+            label: null
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Common
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 160ff359-c841-4bf0-9a46-06a6c1b41574 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 10016d5d-dbb2-4cef-843e-00d706e21955 # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f996e713-5084-4100-ae80-2a051321ab36 # SEO Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7dedfc6a-5cee-4cd7-9173-171f7d38bb51 # SEO Open Graph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'SEO Metadata'
+        sortOrder: 2
+handle: news
+hasTitleField: true
+name: News
+section: d64de1e1-5753-4299-9a46-a2a158c5600a # News
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

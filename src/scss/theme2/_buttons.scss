@@ -1,0 +1,74 @@
+button{
+  outline:none !important;
+}
+
+%btn {
+  @apply leading-none border inline-block cursor-pointer;
+  @apply my-auto;
+  @apply transition-colors;
+  transition-duration: 400ms;
+  @apply theme('buttons.color');
+  @apply theme('buttons.background');
+  @apply theme('buttons.font');
+}
+
+.webkit-btn {
+  @extend %btn;
+
+  &__big {
+    @extend %btn;
+    @apply px-4 py-3 m:px-6 xs:px-4 xs:py-2 relative overflow-hidden;
+    @apply theme('buttons.borderBig');
+  }
+
+
+  &__small {
+    @extend %btn;
+    @apply flex items-center justify-center h-9 w-9 m:h-7 m:w-7 xs:h-6 xs:w-6;
+    @apply theme('buttons.borderSmall');
+  }
+
+  &__icon {
+    @extend %btn;
+    @apply flex border-none;
+    @apply text-f5 l:text-f5 m:text-f5m xs:text-f5xs;
+    @apply font-bold items-center text-color4;
+
+    .btn-icon-text {
+      &:after {
+        content: '';
+        @apply transition-opacity duration-300;
+        @apply block w-full bg-color4 opacity-0;
+        height: 1px;
+      }
+    }
+
+    i {
+      @apply pl-2 text-f5;
+      // @apply text-color4;
+    }
+  }
+
+  &__reversed {
+    @extend %btn;
+    @apply px-4 py-3 m:px-6 xs:px-4 xs:py-2 relative overflow-hidden;
+    @apply theme('buttons.borderBig');
+    @apply border-color2 text-color2;
+  }
+}
+
+.main-btn{
+  @apply text-f6 font-bold py-3 px-5;
+  border:2px solid #8d172f;
+
+  &:hover{
+    @apply bg-color3 text-color2;
+  }
+}
+
+
+
+
+
+
+

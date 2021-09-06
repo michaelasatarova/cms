@@ -1,0 +1,179 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+%text-alignment {
+  @apply text-left;
+}
+
+.webkit-structureOverview-background {
+  @apply theme('structureOverview.color');
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-structureOverview-container {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24;
+}
+
+.webkit-structureOverview-container-cell {
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-structureOverview-parent {
+  @apply grid justify-items-stretch items-stretch grid-cols-6 s:grid-cols-1;
+  @apply theme('structureOverview.gapBetweenBlocks');
+}
+
+
+.webkit-structureOverview-item23 {
+  @apply col-span-2 row-span-1 s:col-span-3 s:row-span-1;
+  @apply relative z-10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+
+  &:first-child, &:nth-child(2) {
+    @apply col-span-3 row-span-1;
+  }
+}
+
+.webkit-structureOverview-item1 {
+  @apply col-span-6 row-span-1;
+  @apply s:col-span-3 s:row-span-1;
+  @apply p-4 s:p-0;
+  @apply relative z-10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+
+  .webkit-structureOverview-item-grid {
+    @apply grid overflow-hidden h-full;
+
+    grid-template-columns: 33% auto;
+
+    @apply s:grid-cols-1;
+
+    > * {
+      @apply row-start-1 row-span-1;
+    }
+  }
+  
+  .webkit-structureOverview-cell-img {
+    @apply row-start-1 row-span-1 mb-4;
+    @apply col-start-1 col-span-1;
+    @apply overflow-hidden;
+    @apply mb-0;
+  }
+  
+  .webkit-structureOverview-image {
+    @apply w-full h-full bg-cover;
+    // @extend .bg-img;
+    @apply theme('structureOverview.imageAspectRatio');
+  }
+  
+  .webkit-structureOverview-heading {
+    @apply col-start-2 col-span-1 mb-4;
+
+    @apply s:row-start-2 s:row-span-1 mb-4 s:col-start-1;
+
+    @apply theme('structureOverview.heading.font');
+    @apply s:mt-4;
+    @extend %text-alignment;
+
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .webkit-structureOverview-description {
+    @apply col-start-2 col-span-1;
+
+    @apply s:row-start-3 s:row-span-1 s:col-start-1;
+
+    @apply theme('structureOverview.text.font');
+    @apply pb-4 mt-8 s:mt-0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .webkit-structureOverview-button-cell {
+    @apply col-start-2 row-span-1;
+    @apply row-start-1 row-span-1;
+  }
+
+  .webkit-structureOverview-button {
+    @apply absolute bottom-0;
+    left: calc(33% + 32px);
+  }
+
+}
+
+.webkit-structureOverview-item2 {
+  @apply col-span-3 row-span-1 s:col-span-6 s:row-span-1;
+  @apply relative z-10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+
+}
+
+.webkit-structureOverview-item3 {
+  @apply col-span-2 row-span-1 s:col-span-3 s:row-span-1;
+  @apply relative z-10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px;
+}
+
+.webkit-structureOverview-item-grid {
+  @apply grid grid-cols-1 overflow-hidden h-full;
+
+  > * {
+    @apply col-start-1 col-span-1;
+  }
+}
+
+.webkit-structureOverview-cell-background {
+  @apply row-start-1 row-span-5;
+  @apply theme('structureOverview.blockColor');
+  @apply theme('structureOverview.blockBorder');
+}
+
+.webkit-structureOverview-cell-img {
+  @apply row-start-1 row-span-1 mb-4;
+  @apply overflow-hidden;
+}
+
+.webkit-structureOverview-image {
+  @apply w-full;
+  // @extend .bg-img;
+  @apply theme('structureOverview.imageAspectRatio');
+}
+
+.webkit-structureOverview-heading {
+  @apply row-start-2 row-span-1 mb-4;
+  @apply theme('structureOverview.heading.font');
+  @apply px-2/24;
+  @extend %text-alignment;
+}
+
+.webkit-structureOverview-description {
+  @apply row-start-3 row-span-1;
+  @apply theme('structureOverview.text.font');
+  @apply px-2/24 pb-4;
+}
+
+.webkit-structureOverview-title {
+  @apply row-start-3 row-span-1;
+  @apply theme('structureOverview.title.font');
+  @apply px-2/24 pt-1 pb-3 xs:pb-2;
+  @extend %text-alignment;
+}
+
+.webkit-structureOverview-text {
+  @apply row-start-4 row-span-1;
+  @apply theme('structureOverview.text.font');
+  @apply px-2/24;
+  @extend %text-alignment;
+}
+
+.webkit-structureOverview-button-cell {
+  @apply row-start-5 row-span-1;
+}
+
+.webkit-structureOverview-button {
+  @apply self-end flex my-4 mr-4;
+  @apply justify-end;
+}

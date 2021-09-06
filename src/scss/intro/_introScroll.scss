@@ -1,0 +1,99 @@
+@import '../theme2/images.scss';
+
+.webkit-intro-container {
+  @apply grid grid-cols-24 h-full relative pb-1/24;
+  margin-top: -50px;
+
+  @screen s {
+    margin-top: -50px;
+  }
+}
+
+
+.webkit-slider-header {
+  @apply col-start-1 col-span-24 row-start-1 row-span-1  bg-color5;
+
+  .webkit-header {
+    @apply relative bg-transparent shadow-none;
+    @apply pt-6 m:pt-4 xs:pt-2;
+
+    .webkit-header-nav-overlay-grid {
+      height: 100vh;
+    }
+
+    .webkit-header-button {
+      @apply text-color2;
+    }
+
+    .webkit-menu-icon {
+      i:before {
+        @apply text-color2;
+      }
+    }
+  }
+}
+
+.webkit-intro-background-image {
+  @extend .bg-img;
+  @apply col-start-1 col-span-24 row-start-1 row-span-3 pt-10;
+  width: 100%;
+  height: 95vh;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @screen s{
+    background-position: 20%;
+    height:100%;
+  }
+
+}
+
+.webkit-intro-background {
+  @apply col-start-1 col-span-24 row-start-1 row-end-3;
+  @apply bg-color1 bg-opacity-25;
+}
+
+.webkit-intro-text-placeholder {
+  @apply col-start-1 col-span-24 row-start-1 row-end-2;
+}
+
+.webkit-intro-grid-text-container {
+  @apply col-start-1 col-span-24 row-start-2 row-span-1;
+  @apply grid-cols-24 grid max-w-content mx-auto;
+}
+
+.webkit-intro-text-container {
+  @apply justify-self-center text-center self-center mb-14 mt-24;
+  @apply col-start-4 col-span-10 row-start-1 row-span-1;
+  @apply m:col-start-3 m:col-span-20;
+  @apply s:col-start-2 s:col-span-22;
+  @apply text-left;
+  @apply w-full;
+  @apply rounded-lg p-4;
+  @apply ml-0 xxl:-ml-6 xl:ml-3 m:ml-0 s:mt-80;
+  background-color: #f6f8faa2;
+
+  @screen xxl{
+    @apply justify-self-start -ml-5;
+    max-width:70%;
+
+  }
+}
+
+.webkit-intro-heading {
+  @apply theme('intro.heading.font');
+
+}
+
+.webkit-intro-untertitel {
+  @apply theme('intro.subtitle.font');
+/*   @apply sm:text-xl; */
+  @apply mb-4;
+  @apply leading-10;
+}
+
+.webkit-intro-text {
+  @apply theme('intro.text.font');
+  @apply font-normal mb-4;
+}

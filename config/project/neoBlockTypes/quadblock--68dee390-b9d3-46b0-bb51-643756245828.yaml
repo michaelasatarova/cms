@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  9216945f-c436-4ba2-b916-efc61bec50c6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 93319fcf-1862-43e5-b691-3f3dc336f647 # Viererblock
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Viererblock
+        sortOrder: 1
+handle: quadblock
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: '4er Block Bild & Text'
+sortOrder: 16
+topLevel: true

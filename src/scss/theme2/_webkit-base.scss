@@ -1,0 +1,33 @@
+html {
+  @apply text-base overflow-x-hidden font-body;
+  @apply theme('base.lineHeight');
+}
+
+body,
+.webkit-modules {
+  @apply theme('base.color');
+  @apply col-start-3 col-span-20;
+}
+
+.modular-block {
+  @apply relative;
+}
+
+@screen minL {
+  a:hover {
+    @apply theme('base.linkHoverColor');
+  }
+}
+
+.webkit-spacing-first {
+  @apply pt-0 pb-verticalSpacing l:pb-1/24 xs:pb-2/24;
+  margin-top: -50px;
+
+  @screen s {
+    margin-top: 0;
+  }
+}
+
+.webkit-spacing-normal {
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}

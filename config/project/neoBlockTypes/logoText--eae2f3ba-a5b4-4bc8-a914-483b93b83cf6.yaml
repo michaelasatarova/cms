@@ -1,0 +1,34 @@
+childBlocks: ''
+field: 2a2eb0bd-8dc4-4700-84d9-aae01b0f498c # Webkit Footer Module
+fieldLayouts:
+  77e579b9-fe14-487a-9922-f0394faf486a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b9de0d7d-11e3-4086-8085-5a5d3aa003d2 # Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 148a3e7c-2a18-409f-a343-5d1627de8284 # Text Body
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: logoText
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Logo + Text'
+sortOrder: 1
+topLevel: true

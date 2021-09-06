@@ -1,0 +1,42 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  8fe1399b-245b-40e4-9e6c-b2672051602c:
+    tabs:
+      -
+        elements:
+          -
+            style: warning
+            tip: 'Der Titel von jeder Gruppe **muss** einzigartig sein!'
+            type: craft\fieldlayoutelements\Tip
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: 'Gruppen Titel'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            style: warning
+            tip: 'Der Titel / das Label von jedem Feld **muss** einzigartig sein!'
+            type: craft\fieldlayoutelements\Tip
+          -
+            fieldUid: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Formular Gruppe'
+        sortOrder: 1
+handle: formGroup
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Formular Gruppe'
+sortOrder: 21
+topLevel: false

@@ -1,0 +1,79 @@
+field: b31068bd-6e4d-465e-9648-6442bf67c853 # Gallery
+fieldLayouts:
+  09cfdeb6-4f0d-4b07-9d1f-95d00c2e8a6d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e04d3b2c-54a6-4485-9b0e-30196fd2486f # Album
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b1344ae1-32d4-411d-b427-654ec988089c # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  b1344ae1-32d4-411d-b427-654ec988089c: # Titel
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e04d3b2c-54a6-4485-9b0e-30196fd2486f: # Album
+    contentColumnType: string
+    fieldGroup: null
+    handle: album
+    instructions: 'Tipp: Mit einem Doppelklick auf ein Bild, kann eine Beschreibung hinzugefügt werden.'
+    name: Album
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: 'Bilder hinzufügen'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

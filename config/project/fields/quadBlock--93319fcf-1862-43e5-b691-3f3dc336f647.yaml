@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: quadBlock
+instructions: ''
+name: Viererblock
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - af01008b-babb-48d7-95b4-1dafac0c3ad4 # Link Button
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - b98915db-19af-4815-a4a9-36634d8359de # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - ef1aeba1-a624-469c-8ae6-ad1bc09ec15d # Bild
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - f609968d-a0b3-4bbd-82fa-2d889b3fcb7a # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_quadblock}}'
+  fieldLayout: matrix
+  maxRows: '2'
+  minRows: '2'
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

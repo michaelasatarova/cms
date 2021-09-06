@@ -1,0 +1,34 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  d2b06ca9-8ce6-42ea-9bde-973aa0e6ff05:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: Titel
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a9b1a272-5d22-46c1-9529-0fa6d40d648d # Akkordeon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: akkordeon
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Akkordeon
+sortOrder: 12
+topLevel: true

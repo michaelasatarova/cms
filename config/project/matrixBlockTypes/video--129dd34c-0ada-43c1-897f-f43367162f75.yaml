@@ -1,0 +1,68 @@
+field: c282063a-f8a4-4b79-b8bd-7e9fd0da9205 # Double Blocks
+fieldLayouts:
+  37783535-d77e-4ff4-8297-328a25695681:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ac0e6edc-2685-4ca3-8f35-f2a8fc2dbc8d # Video Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1e5bec99-39d0-40f4-bd66-c3458b5aa791 # Youtube ID
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1e5bec99-39d0-40f4-bd66-c3458b5aa791: # Youtube ID
+    contentColumnType: text
+    fieldGroup: null
+    handle: youtubeId
+    instructions: "z.B. \"dQw4w9WgXcQ\" \r\nhttps://www.youtube.com/watch?v=YoutubeID\r\n\r\nhttps://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    name: 'Youtube ID'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ac0e6edc-2685-4ca3-8f35-f2a8fc2dbc8d: # Video Titel
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoTitle
+    instructions: ''
+    name: 'Video Titel'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: video
+name: Video
+sortOrder: 3

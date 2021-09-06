@@ -1,0 +1,100 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  60532a22-7fd4-4d35-93a9-815cd8553c43:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1c518d7c-ac59-46d8-9c1b-a8e015256a92 # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b86df97c-4bf2-497d-8c59-53e56297acee # Optionen
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e8693e5a-f37d-4f02-9f2c-0126681f7264 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1c518d7c-ac59-46d8-9c1b-a8e015256a92: # Titel
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  b86df97c-4bf2-497d-8c59-53e56297acee: # Optionen
+    contentColumnType: string
+    fieldGroup: null
+    handle: options
+    instructions: ''
+    name: Optionen
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 7a54e3d6-93ec-4bb3-a662-2fe93392f3ff # Label
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_87_options}}'
+      fieldLayout: table
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  e8693e5a-f37d-4f02-9f2c-0126681f7264: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: radio
+name: Optionsfeld
+sortOrder: 4

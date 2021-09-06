@@ -1,0 +1,288 @@
+dateModified: 1627915525
+email:
+  fromEmail: one@binaryone.ch
+  fromName: 'craft webkit'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0a79ec94-488b-4c60-bf96-9d98678d3ea4: 'Small Size Auto' # Small Size Auto
+    0b254874-1508-427b-8a4b-0fdf47a6fb56: 'craft webkit' # craft webkit
+    0c6cff32-5be7-4248-91b5-1f65d482bfbc: 'Icon Liste' # Icon Liste
+    0e6f6c61-1d8e-4fcf-a95c-e6874529dd3f: Link # Link
+    1bc42527-20f2-450a-9156-9dd0f0c2cef0: 'Webkit Module Fields' # Webkit Module Fields
+    1c518d7c-ac59-46d8-9c1b-a8e015256a92: Titel # Titel
+    1c766314-fb4a-4df3-90c7-f7673d908c4d: 'Link Button' # Link Button
+    1ce146bc-2bda-4768-9147-9b21e618594f: Titel # Titel
+    1d46cb2a-66ba-425a-83d3-06a98b535c3c: Icon # Icon
+    01dbe3db-905b-4335-b3ee-d5e3dc9bd99f: Text # Text
+    1e5bec99-39d0-40f4-bd66-c3458b5aa791: 'Youtube ID' # Youtube ID
+    1ff8a0b3-5545-487a-a13c-3cb0f31ad7ed: Url # Url
+    2a2eb0bd-8dc4-4700-84d9-aae01b0f498c: 'Webkit Footer Module' # Webkit Footer Module
+    2e204915-3391-48a4-bb8c-a7ddfc9d1c19: BCC # BCC
+    2eaf5d84-2041-4c70-9adb-071318a95caf: Titel # Titel
+    02fabb4f-df65-4b8c-93ba-00cd9cb39ce4: 'Navigation Stufe 1' # Navigation Stufe 1
+    3d3399fb-c936-4133-ad6c-59d4255483de: 'Banner Icon & Text' # Banner Icon & Text
+    3e47b133-8348-499c-8852-f83b1b8760bd: 'Public Schema' # Public Schema
+    3ea85677-e6d3-46a8-8455-1562d6362e74: Bild # Bild
+    4a67ddc4-6d41-4114-83b9-be2ec2462146: 'Webkit Lead' # Webkit Lead
+    4ac263ff-7e04-413f-aa43-6d7cda30c63e: 'Platzhalter Text' # Platzhalter Text
+    4b5cfefd-0b6c-45bc-9ca7-6eead6b7b0c5: 'Nav Item' # Nav Item
+    4b6a6308-23c3-4cb6-a7b8-cdbc0035ba24: 'Banner Kontakt' # Banner Kontakt
+    4b9c354b-76d3-41ac-912d-956ffb2ed02e: 'Webkit Header Action Link' # Webkit Header Action Link
+    4b1882f6-18d9-4a2f-a0f6-ebe9d3785b96: Text # Text
+    04c0c2c7-ed88-4e5d-83fc-d5c0c9f1a601: Text # Text
+    4c8097f5-6e02-42d6-8417-69ad8639be86: Url # Url
+    4d5576ce-455d-4bd5-b83f-27e3d316b0cc: Home # Home
+    5b8ab1c7-3c5f-42c6-8c5d-43ef97f4f458: 'Link Button' # Link Button
+    5c101732-a71f-4cd2-8713-386244b1fbb7: 'Pflichtfeld?' # Pflichtfeld?
+    5c432263-c234-41d6-914a-ec7331c87f13: Text # Text
+    6b48808d-e032-4e2f-a189-a6b349eb1eaf: Home # Home
+    6ef35462-90bf-42be-9dfc-779243fb3064: Bilder # Bilder
+    6f7cb537-ba47-417f-acfe-419a8d017f0b: 'Webkit Header Action Label' # Webkit Header Action Label
+    07a51f33-7e99-4cf8-8945-9c51e38fba91: Slides # Slides
+    7a54e3d6-93ec-4bb3-a662-2fe93392f3ff: Label # Label
+    7a79aeda-db40-4ea4-83d8-db8f17ac6338: Footer # Footer
+    7ab6ffaf-0a1a-4200-900e-c87b11b673b1: Formular # Formular
+    7bfec85e-ea01-4d17-98d3-c250ef9ffb30: Bild # Bild
+    7c1b1bbf-20a6-4751-b641-c86875b38786: Liste # Liste
+    7c35398c-fa5f-4c8a-a8f7-40f2a4f60eea: 'Mehr Laden Button' # Mehr Laden Button
+    7dedfc6a-5cee-4cd7-9173-171f7d38bb51: 'SEO Open Graph' # SEO Open Graph
+    7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0: Heading # Heading
+    8d236ebd-2e93-4c6d-abd6-5f8ee2fbbefd: CC # CC
+    8e21212c-bd4b-45b5-b2ed-84cf40e47df8: Bild # Bild
+    9cc518a2-c0d8-4ca4-96d6-92b2c1aba26b: Titel # Titel
+    9d92b051-8d46-4cde-8ae0-2e02064a3338: 'Titel Text' # Titel Text
+    9f9f5435-4665-4d01-b96a-2fc61988a7fd: Text # Text
+    9f4851cc-ccca-4537-bcd7-386d4debaca9: Bilder # Bilder
+    10b8c948-9eeb-45ae-9d07-a6a9ce1d11fa: '3-5er Raster Bild & Text' # 3-5er Raster Bild & Text
+    015c3089-60ea-4cd8-bda7-f01b41764cd0: 'Lead Text' # Lead Text
+    16a52e0e-a6ef-4963-943f-5260bd19bda4: 'Small Size' # Small Size
+    19d13221-a397-409b-8175-f17c2327b5cb: Label # Label
+    21b04d42-4690-450b-aa9e-999f36d24053: Text # Text
+    25dce049-3daf-44a9-8587-879831013d22: Text # Text
+    31ed697c-a04f-4e95-97f5-b641db6e0087: 'Intro Hintergrund Bild' # Intro Hintergrund Bild
+    039cc497-f979-4f93-aef8-28a8e5458b59: 'Webkit Navigation' # Webkit Navigation
+    40d231f8-6927-44ad-8bb4-c7c34c8a584d: 'Navigation Text' # Navigation Text
+    40f09f0b-a0b1-4309-bd92-e99ecb61581e: Slideshow # Slideshow
+    41c39613-e121-4f11-96bc-9e2f953939c6: Inhaltsseiten # Inhaltsseiten
+    44a1508f-29ed-40ae-a6ad-e4f2b9a446f0: 'Youtube ID' # Youtube ID
+    45ab70e4-8461-4197-a7e6-c64011de028e: 'Link Button 2' # Link Button 2
+    48aae693-1783-4941-a26b-0af27eb48b5d: 'Platzhalter Text' # Platzhalter Text
+    48bed9eb-17e1-4c09-892a-1ea17237162b: 'Banner Video' # Banner Video
+    50e92b96-8a59-41dc-9845-4d88cd21bc66: Instagram # Instagram
+    51f9c559-f4db-4a9c-97d9-065574859d27: Formular # Formular
+    60cf4141-3aaf-4f10-b409-6af0bf8ac2e6: 'Pflichtfeld?' # Pflichtfeld?
+    63f00039-f7fe-404d-adf5-1b83bc001e5d: Intros # Intros
+    68dee390-b9d3-46b0-bb51-643756245828: '4er Block Bild & Text' # 4er Block Bild & Text
+    68e82b8b-7b96-4fc5-af8c-59da4a34bc0d: Anker # Anker
+    72da1f4a-2839-4c2e-85ea-e4f4def3e686: Bild # Bild
+    76bac8ea-da1b-461c-a071-4c34b5b74773: Titel # Titel
+    077bc1e5-aff9-4c5e-9f38-7ca7257db5eb: Url # Url
+    84d94f7d-8ccf-48b1-9edc-939602e04244: 'Link Button' # Link Button
+    86c4e5d6-fede-4687-b2d2-6395be33c1a9: 'Navigation Mehrstufig' # Navigation Mehrstufig
+    089a6c2e-57e5-45be-b175-5228719d1e88: Titel # Titel
+    097aed40-8f08-4c93-8b75-285855e34a80: 'Intro Vordergrund Bild' # Intro Vordergrund Bild
+    129dd34c-0ada-43c1-897f-f43367162f75: Video # Video
+    148a3e7c-2a18-409f-a343-5d1627de8284: 'Text Body' # Text Body
+    160ff359-c841-4bf0-9a46-06a6c1b41574: 'SEO Title' # SEO Title
+    231ad0ae-a517-4ad0-9a72-ddd64c44c69e: Video # Video
+    233d2610-18ef-4c10-a179-5c4a43ec77eb: Telefon # Telefon
+    236eb35d-7500-49b6-85e1-e7d23e52dbd7: Optionsfeld # Optionsfeld
+    256de355-1a54-43fa-b637-666c894386e7: 'Formular Bestätigung' # Formular Bestätigung
+    355ba1e0-f34d-429d-8821-21fd45eb4b98: Footer # Footer
+    466d3ac1-9dc2-44bb-ad9b-73430ff41307: Facebook # Facebook
+    484c9ccc-d23c-4ad6-a23f-1cf56c0a12ac: Label # Label
+    491add03-cf0f-4073-8ed8-2dac0626518e: Email # Email
+    520e7909-7a22-4217-83f2-5029930d9f04: 'Formular Felder' # Formular Felder
+    647b3f3b-384a-480b-9ec1-4e289de8369c: 'Nav Item' # Nav Item
+    667c7c4c-29b7-4c40-8b4b-ef1a0756f6ec: textBody2 # textBody2
+    679e300a-991f-49e5-b494-90173aec0aae: Akkordeon # Akkordeon
+    696d13d3-8993-4e66-a446-d8ab46fdc128: Link # Link
+    741efb7e-a71e-485c-92bf-4d1cae1a067c: '3-5er Raster Text' # 3-5er Raster Text
+    773b97cc-cb48-46a7-8c3f-ce35db2bd6c5: 'Intro Text' # Intro Text
+    807bfccd-b9b8-4294-a223-41ac24aef090: 'Titel 2' # Titel 2
+    836b0d2a-33bd-41ac-9692-330272fa0185: Label # Label
+    864fa429-0262-4af8-8d51-e0508bcb30ff: Text # Text
+    910ed34d-c1a1-40ba-8576-af9f30717649: 'Webkit Module' # Webkit Module
+    975fbd55-32c2-456f-a930-037490d06ae7: Optionen # Optionen
+    1114df9c-e4a5-460c-97a0-f194756acbf0: 'Link Button' # Link Button
+    3083ffd7-3b97-424e-8875-6200f1401605: 'Testimonial Slides' # Testimonial Slides
+    3379a675-09a3-45b9-bca9-0eef4546f541: Inhaltsseiten # Inhaltsseiten
+    3636d6f3-c7cf-4ffe-95cb-12b2f294ff44: 'Webkit Body' # Webkit Body
+    4411d17e-60a2-4002-b8e1-045598fbc880: Text # Text
+    5515b856-0af6-4bef-9568-5b76cefece55: Label # Label
+    06209bf0-5cb5-4093-8b2a-f806f61f0a52: 'Navigation Stufe 1 ohne Link' # Navigation Stufe 1 ohne Link
+    6750e875-70a1-47f8-88e9-63e7789ff6c2: Bild # Bild
+    7689c02a-cec8-4a61-9c94-951382758edf: 'Linked Entry' # Linked Entry
+    8016b5d1-0daa-48be-aad3-b95304e4b6af: 'Text Lang' # Text Lang
+    8805bdc8-4a56-444f-8ae6-0461d9550a16: 'Webkit Navigation' # Webkit Navigation
+    9239e30e-a13d-4ae7-a3de-284c9f4c5585: Betreff # Betreff
+    9514b336-4d2c-4d7b-b4c6-a57026cb5eaa: Icon # Icon
+    9515f5b5-0b45-4e4d-ba3b-685c1364fb04: 'Webkit Footer Impressum' # Webkit Footer Impressum
+    9585fc7c-48df-47a2-ac3e-35eb4871d91d: '2er Blöcke Bild, Text, Links & Videos' # 2er Blöcke Bild, Text, Links & Videos
+    10016d5d-dbb2-4cef-843e-00d706e21955: 'SEO Description' # SEO Description
+    27786d5b-9b80-4548-9341-15576d41c020: Titel # Titel
+    039230a5-a5e1-463d-b3f1-1cb352be074a: 'Half Size Auto' # Half Size Auto
+    50083f62-97cc-4c9e-9d74-f58fbfb73079: Text # Text
+    57464a45-1f6a-4547-ad41-fe401f0fda1a: Text # Text
+    064533e8-c67c-4212-aeac-a868c8ff071a: Titel # Titel
+    65665d06-1330-4a39-b360-4b2058f7adc8: Navigation # Navigation
+    93319fcf-1862-43e5-b691-3f3dc336f647: Viererblock # Viererblock
+    97227a18-4c75-4244-bb28-a3a58338eee6: 'Pflichtfeld?' # Pflichtfeld?
+    0380519c-f590-4d75-a243-ea83e3e554d5: Header # Header
+    577569b2-0401-4cca-b20c-b46d42c7bf8e: 'Banner Testimonial' # Banner Testimonial
+    654003cc-25a0-4596-810a-b2d7d5ef3c3d: 'Half Size' # Half Size
+    847704ac-cf2a-4b5a-9013-346588c9eff1: 'Pflichtfeld?' # Pflichtfeld?
+    920701a6-7479-409d-be9a-654b3ab8d395: Scroll # Scroll
+    2576354b-c352-4928-9325-0aaf74af8df3: Action # Action
+    3264890e-5157-4c66-bae6-dfff63d808d4: 'craft webkit' # craft webkit
+    34237880-1398-4ff6-b2bd-8b9197184b8a: 'Webkit Intro' # Webkit Intro
+    56580202-cceb-4d6c-9281-9506a629e304: 'Text Grid Block' # Text Grid Block
+    a0f39fce-4ca4-4e9d-8e6f-af27ac691e88: Datum # Datum
+    a9b1a272-5d22-46c1-9529-0fa6d40d648d: Akkordeon # Akkordeon
+    a37b6973-aff8-4d3e-9af5-edeca898fe07: 'Link Button' # Link Button
+    a51c3392-7a95-4231-85f0-c10f4c3cff6a: Titel # Titel
+    a596a6db-de03-443c-acc0-d892f5e12ad0: Blocks # Blocks
+    a724c7de-b204-48b6-a6d1-cdc57fa2c708: 'Channel Name' # Channel Name
+    aa6c1a18-a753-40d7-8b57-080d84860702: 'Pflichtfeld?' # Pflichtfeld?
+    abef8465-2cde-4edf-aae0-05f9db6e52d5: 'Mehrzeiliger Text' # Mehrzeiliger Text
+    abf848be-860d-40f2-95d7-677d8eaeaf0c: 'Banner Bild' # Banner Bild
+    ac0e6edc-2685-4ca3-8f35-f2a8fc2dbc8d: 'Video Titel' # Video Titel
+    adf499ca-e86a-4e68-928e-14b379d7a880: Optionen # Optionen
+    af01008b-babb-48d7-95b4-1dafac0c3ad4: 'Link Button' # Link Button
+    af607763-8962-4d08-863f-f8a15028ca6b: Header # Header
+    afd9ff69-3521-4be0-9684-a31c4bb6bf16: Mehrfachoptionsfeld # Mehrfachoptionsfeld
+    b056448d-409f-44c9-b729-4beca73ba78a: Bild # Bild
+    b9de0d7d-11e3-4086-8085-5a5d3aa003d2: Bild # Bild
+    b52e025a-f4b8-4bd4-a340-e2e54e42415b: Videos # Videos
+    b86df97c-4bf2-497d-8c59-53e56297acee: Optionen # Optionen
+    b96bd31b-cb0c-440f-a472-d3aa2f7ec52a: 'block title' # block title
+    b617bf11-db3a-4b70-a301-245f32ba0667: 'Text Medium' # Text Medium
+    b1344ae1-32d4-411d-b427-654ec988089c: Titel # Titel
+    b31068bd-6e4d-465e-9648-6442bf67c853: Gallery # Gallery
+    b98915db-19af-4815-a4a9-36634d8359de: Titel # Titel
+    b1958500-4854-4801-839f-bc4f04278504: News # News
+    b3659708-bf86-4df9-8927-3c7422172351: 'Webkit Header Logo' # Webkit Header Logo
+    bb7a3bfa-6e82-4934-b333-48f53f3ced93: Styleguide # Styleguide
+    bc5e3775-e22a-4e5d-9763-38f807c61429: 'Bild Galerie' # Bild Galerie
+    bdf6621c-ec21-443f-ae85-2233788747ef: Label # Label
+    be4a5021-5ad6-4cc9-8298-03944edceaeb: Heading # Heading
+    be4384af-a9e1-4e9f-ac66-b00bc17cea18: 'Intro Überschrift' # Intro Überschrift
+    becda51b-bb18-4359-be9a-2933776d413b: E-Mail # E-Mail
+    bf5d535a-7dd7-4538-bd5c-f62c20b9383c: Hintergrundbild # Hintergrundbild
+    bf120a7a-026c-4d46-bda5-2c2d5377fdce: 'Slider Bild, Text & Link' # Slider Bild, Text & Link
+    c1e92987-b749-4931-8f92-f9e1e108c309: 'SEO Metadata' # SEO Metadata
+    c4b56721-7e1c-4d11-b7dd-49e78b8ca084: 'Webkit Hauptbild' # Webkit Hauptbild
+    c4f17cab-5d3e-4f8b-a5ea-b2ee136abeec: Text # Text
+    c7d797b9-efa8-45ed-ab01-722aaa16fe2d: 'Banner Text' # Banner Text
+    c9c8741f-3a13-4611-bed6-f6cea622974d: Kontakt # Kontakt
+    c25a7824-8c38-4d6b-bc9d-b568f7503fd1: 'Weniger anzeigen' # Weniger anzeigen
+    c99be86b-644c-4f33-aa32-5b1f44068475: '2er Raster Bild & Text' # 2er Raster Bild & Text
+    c260b779-262e-432f-bcdf-a7f932388d26: Url # Url
+    c371d52b-f94e-4b75-892f-e16d175a4fc4: Titel # Titel
+    c665f1d6-fcab-471e-aa8c-5b394a39ffa8: 'Quarter Size Auto' # Quarter Size Auto
+    c7245ed6-92ea-4546-a517-f3dd80f28e62: Nav # Nav
+    c282063a-f8a4-4b79-b8bd-7e9fd0da9205: 'Double Blocks' # Double Blocks
+    ca06aeeb-785a-4ee2-ad5c-c3a4cee56bfc: 'Channel Übersicht' # Channel Übersicht
+    ca7a77da-46d0-44c0-b358-52ff7285bfc5: Url # Url
+    cafaaa55-668c-4c5f-965d-3c170af61c48: Twitter # Twitter
+    cc671b24-30f5-47db-8e00-543a452fd37f: Video # Video
+    cedc4a23-b718-415a-b098-da392c541a82: Link # Link
+    d5e54892-9b58-4ead-9025-6cbeda733c5a: 'Scroll Down Button' # Scroll Down Button
+    d7ec1402-38b7-4bb0-815d-82d5fb690f50: Text # Text
+    d8c6065c-885e-4cba-b014-0a5a9842bc85: Empfänger # Empfänger
+    d64de1e1-5753-4299-9a46-a2a158c5600a: News # News
+    d450cbf5-99e5-4fa5-9484-7581fc28247b: 'Senden Button' # Senden Button
+    d840c02b-cb4b-4e33-bdc9-69000c2349eb: 'Full Size' # Full Size
+    d9636f55-d272-44a3-a293-531a5f938deb: Styleguide # Styleguide
+    d277523c-f3f3-476f-b4c1-cdd19cfa16ff: Liste # Liste
+    d868949d-6a8b-4b48-ba7a-b79b1c78c391: 'Banner Newsletter' # Banner Newsletter
+    dd0180cc-1796-46b6-82f3-0eed5e48d9fd: Hintergrundbild # Hintergrundbild
+    ddb9fa7d-f09f-443c-8343-2624de708049: Zweiergrid # Zweiergrid
+    dec65e20-d3b4-4458-89f8-5f59a7ed4f2c: 'link Button' # link Button
+    e03f0cf9-fd9b-4af6-83b2-aaea214efd64: 'Dropdown Liste' # Dropdown Liste
+    e034f1c0-330e-4ffa-924e-b74982f95184: 'Text Kurz' # Text Kurz
+    e04d3b2c-54a6-4485-9b0e-30196fd2486f: Album # Album
+    e048d58e-65f9-4276-a273-f100a1e315be: Blank # Blank
+    e4aac7fc-a36c-4e43-a20f-60f372772fa3: Titel # Titel
+    e5d89d81-fd18-4420-8a50-78fde83337a5: 'Grid Block' # Grid Block
+    e6fd7db1-cf92-491a-b9c5-6f7124f6de3a: 'Block Title Bold' # Block Title Bold
+    e12c3611-0537-4be1-8b17-1e6b0970fd25: 'Link Button' # Link Button
+    e26a8999-481d-4621-93c2-ffb842c3d40e: 'Anker Id' # Anker Id
+    e73c353d-0fec-486a-9e95-d7b7da07e39f: Label # Label
+    e6072f5b-24cd-4730-92fd-25fe65062e61: Common # Common
+    e8693e5a-f37d-4f02-9f2c-0126681f7264: 'Pflichtfeld?' # Pflichtfeld?
+    e9992a02-2a0c-4b1a-b397-180a26c73cac: Titel # Titel
+    e9579874-a53d-4ece-8339-4f7ff2546938: 'Quarter Size' # Quarter Size
+    eae2f3ba-a5b4-4bc8-a914-483b93b83cf6: 'Logo + Text' # Logo + Text
+    eb9f8e15-d4ad-4131-bdde-d5d44ddd7e08: Titel # Titel
+    ebc6eb83-9ad3-4817-8161-e4559f1dd748: Text # Text
+    ec9df225-aeaa-46f2-b1bd-999fe38189cc: Linkedin # Linkedin
+    ecf27a98-d62f-4869-98a7-269b83fa33fd: Label # Label
+    edfe157b-06af-4ce4-808a-88e789977548: 'Link Button' # Link Button
+    ef1aeba1-a624-469c-8ae6-ad1bc09ec15d: Bild # Bild
+    ef40d4d6-6a35-4fbf-aa84-5f0436f51bb7: Youtube # Youtube
+    f06f6600-7761-4925-aa91-6e9c94ff5a89: Text # Text
+    f2f1ed3d-3614-4cef-bfb0-94caf2e5ce7e: Titel # Titel
+    f19f374f-2e33-41a3-a13e-0bebaa417841: 'craft webkit EN' # craft webkit EN
+    f149b028-a15f-4397-b423-455f65a2f80d: 'Webkit Footer Socialmedia' # Webkit Footer Socialmedia
+    f996e713-5084-4100-ae80-2a051321ab36: 'SEO Keywords' # SEO Keywords
+    f7007d83-3dc6-43eb-88db-28f5e6810270: 'Formular Gruppe' # Formular Gruppe
+    f609968d-a0b3-4bbd-82fa-2d889b3fcb7a: Text # Text
+    fb217350-e756-46c9-a054-24c690359833: Label # Label
+    fc69d61f-7c8e-403a-90bb-0c9cd4e31ba4: Text # Text
+    fd05546b-7d1b-47e5-af17-f211d4a982b5: 'Linked Entry' # Linked Entry
+    fe226f87-1746-456c-99cb-2081cc83a1df: 'Navigation Stufe 2' # Navigation Stufe 2
+    fee9963d-8382-4dc9-84dd-5c4f0bcaecea: 'Pflichtfeld?' # Pflichtfeld?
+    ff9c71f9-1e82-4efd-b05a-c17f941ea818: 'Full Size Auto' # Full Size Auto
+plugins:
+  craft-webkit:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: 1R5OWIJ6IL71MW49T334FEQD
+    schemaVersion: 2.9.11
+  recaptcha:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      secretKey: $BINARYKIT_RECAPTCHA_PRIVATE_KEY
+      siteKey: $BINARYKIT_RECAPTCHA_WEBSITE_KEY
+      validateContactForm: ''
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: VTPY3G8BGI74FFOXKOM0MOMB
+    schemaVersion: 3.0.10
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'craft webkit'
+  schemaVersion: 3.7.7
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

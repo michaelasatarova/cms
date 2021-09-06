@@ -1,0 +1,36 @@
+field: f149b028-a15f-4397-b423-455f65a2f80d # Webkit Footer Socialmedia
+fieldLayouts:
+  3dd787fc-94d0-4fc5-963b-dd45a1913114:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4c8097f5-6e02-42d6-8417-69ad8639be86 # Url
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4c8097f5-6e02-42d6-8417-69ad8639be86: # Url
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: socialMediaUrl
+    instructions: ''
+    name: Url
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: youtube
+name: Youtube
+sortOrder: 5

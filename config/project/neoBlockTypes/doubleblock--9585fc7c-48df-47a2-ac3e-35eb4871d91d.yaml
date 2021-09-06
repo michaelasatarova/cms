@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  fac521c7-0470-4555-9122-174b9f5d5132:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c282063a-f8a4-4b79-b8bd-7e9fd0da9205 # Double Blocks
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Zweierblock
+        sortOrder: 1
+handle: doubleblock
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: '2er Blöcke Bild, Text, Links & Videos'
+sortOrder: 17
+topLevel: true

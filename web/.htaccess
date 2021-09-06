@@ -1,0 +1,67 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# # Redirect www to EN, EN is primary page
+	# RewriteCond %{HTTP_HOST} ^www\.XXXXXXXXXX\.com$ [NC]
+	# RewriteRule .* https://en.XXXXXXXXXX.com%{REQUEST_URI} [L,R=302]
+
+	# # Temporary redirects for not yet activated languages
+	# # Skip redirect if it's a Craft live preview
+	# RewriteCond %{QUERY_STRING} !(^|&)x-craft-live-preview [NC]
+	# RewriteCond %{HTTP_HOST} ^de\.XXXXXXXXXX\.com$ [NC,OR]
+	# RewriteCond %{HTTP_HOST} ^fr\.XXXXXXXXXX\.com$ [NC,OR]
+	# RewriteCond %{HTTP_HOST} ^it\.XXXXXXXXXX\.com$ [NC]
+	# RewriteRule .* https://en.XXXXXXXXXX.com%{REQUEST_URI} [L,R=302]
+
+	# Redirect to secure site
+	# Skips redirect if it's a local domain (dev is always non-HTTPS)
+	RewriteCond %{HTTPS} on
+	RewriteCond %{HTTP_HOST} ^(localhost|.*\.local)$ [NC]
+	RewriteRule .* http://%{HTTP_HOST}%{REQUEST_URI} [L,R=302,S=1]
+	RewriteCond %{HTTPS} off
+	RewriteCond %{HTTP_HOST} !^(localhost|.*\.local)$ [NC]
+	RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	# # Open file or folder if it exists
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule ^ - [L]
+
+	# Create variable containing current folder
+	RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+	RewriteRule ^(.*)$ - [E=BASE:%1]
+
+	# IE11: Render "/old-browsers"
+	RewriteCond %{HTTP_USER_AGENT} "(rv:11\.0)" [NC]
+	RewriteRule ^(.*)$ %{ENV:BASE}index.php?p=old-browsers [QSA,L]
+
+	# Send would-be 404 requests to Craft
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ %{ENV:BASE}index.php?p=$1 [QSA,L]
+</IfModule>
+
+# gzip komprimierung
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE application/json
+</IfModule>
+# END gzip
+
+# Expires header for browser caching of images
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+</IfModule>
+# END Expires

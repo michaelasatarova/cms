@@ -1,0 +1,17 @@
+<div class="webkit-footer-module-contact">
+  <h2 class="webkit-footer-heading">Kontakt</h2>
+  <div class="webkit-footer-kontakt-text">
+    {{ matrixBlock.textBody2 }}
+  </div>
+  <div class="mt-5">
+    <i class="fas fa-paper-plane webkit-footer-kontakt-icon mr-2"></i>
+    <a class="webkit-footer-kontakt-link"
+       href="{{ matrixBlock.email }}">{{ matrixBlock.email.value|raw }}</a>
+  </div>
+  <div>
+    <i class="fas fa-phone webkit-footer-kontakt-icon mr-2"></i>
+    <a class="webkit-footer-kontakt-link"
+       href="{{ matrixBlock.tel|spaceless }}">{{ matrixBlock.tel.value|raw }}</a>
+  </div>
+
+</div>

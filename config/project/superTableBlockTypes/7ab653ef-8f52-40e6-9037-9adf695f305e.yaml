@@ -1,0 +1,37 @@
+field: adf499ca-e86a-4e68-928e-14b379d7a880 # Optionen
+fieldLayouts:
+  b344890d-8809-4c1e-b681-04dab57ee777:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ecf27a98-d62f-4869-98a7-269b83fa33fd # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ecf27a98-d62f-4869-98a7-269b83fa33fd: # Label
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText

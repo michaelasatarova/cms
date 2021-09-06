@@ -1,0 +1,100 @@
+field: 520e7909-7a22-4217-83f2-5029930d9f04 # Formular Felder
+fieldLayouts:
+  bcbb868a-c886-47b2-930d-58f035a248bb:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 089a6c2e-57e5-45be-b175-5228719d1e88 # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: adf499ca-e86a-4e68-928e-14b379d7a880 # Optionen
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa6c1a18-a753-40d7-8b57-080d84860702 # Pflichtfeld?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  089a6c2e-57e5-45be-b175-5228719d1e88: # Titel
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  aa6c1a18-a753-40d7-8b57-080d84860702: # Pflichtfeld?
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: required
+    instructions: ''
+    name: 'Pflichtfeld?'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  adf499ca-e86a-4e68-928e-14b379d7a880: # Optionen
+    contentColumnType: string
+    fieldGroup: null
+    handle: options
+    instructions: ''
+    name: Optionen
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - ecf27a98-d62f-4869-98a7-269b83fa33fd # Label
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_89_options}}'
+      fieldLayout: table
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: 'Option hinzufügen'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: select
+name: 'Dropdown Liste'
+sortOrder: 6

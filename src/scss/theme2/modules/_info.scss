@@ -1,0 +1,335 @@
+.info-container {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+  @apply pb-2;
+  @apply text-f5 m:text-f5m xs:text-f5xs;
+  margin-top: calc(-4.1666% + -90px);
+}
+
+.webkit-intro-search-container {
+  @apply justify-start text-center self-center relative;
+  @apply col-start-3 col-span-20;
+  @apply  w-full mt-8;
+ // @apply  w-3/4 xl:w-full mt-8;
+  display: flex;
+  z-index: 2;
+
+  @screen m {
+    @apply rounded-2xl;
+    flex-wrap: wrap;
+  }
+
+  @screen s {
+    @apply col-start-2 col-span-22;
+    flex-wrap: wrap;
+  }
+}
+
+.webkit-intro-webcam {
+  @apply h-full relative;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  order: 1;
+
+  @screen m {
+    flex-basis: 50%;
+    height: 50%;
+    order: 2;
+  }
+}
+
+.webkit-intro-webcam-label {
+  @apply text-color2;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+
+  @screen m {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.webkit-intro-search-label {
+  @apply text-color2 left-6;
+  position: absolute;
+  top: 40px;
+  /* left: 30px; */
+
+  @screen m {
+    top: 15px;
+  }
+
+  @screen s {
+    @apply left-3;
+    top: 10px;
+  }
+}
+
+.webkit-intro-search {
+  position: relative;
+  flex-grow: 6;
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+  order: 1;
+  z-index: 1;
+
+
+  @screen m {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 50%;
+    order: 1;
+
+    .search-menu-container {
+      @apply bg-color5 text-color2;
+    }
+
+    .webkit-intro-search-label {
+      @apply theme('intro.text.font');
+      @apply text-left;
+    }
+  }
+
+  form {
+    @apply bg-color2 rounded-2xl;
+    width: calc(100% - 60px);
+    position: relative;
+    height: 56px;
+    width: 100%;
+
+    @screen s {
+      width: calc(100% - 30px);
+      height: 36px;
+    }
+  }
+}
+
+.search-input {
+  @apply p-3 pr-0 float-left rounded-2xl outline-none appearance-none;
+  width: calc(100% - 206px);
+  height: 56px;
+  @apply theme('intro.text.font');
+
+  @screen s {
+    height: 36px;
+    width: calc(100% - 216px);
+  }
+
+  @screen xs {
+    width: calc(100% - 166px);
+  }
+}
+
+.suggestion-select {
+  @apply bg-color6 text-color1;
+  width: 150px;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+
+  .bone-select-input {
+    @apply bg-color4;
+  }
+
+  @screen xs {
+    width: 130px;
+  }
+}
+
+.search-menu-placeholder {
+  @apply bg-color6 text-color1 shadow-sm;
+  height: 56px;
+  width: 100%;
+  position: relative;
+
+  @screen s {
+    height: 36px;
+  }
+}
+
+.search-menu-placeholder-text {
+  @apply text-f5 m:text-f5m xs:text-f5xs;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-menu-entries {
+  @apply bg-color6 text-color1 shadow-lg;
+  visibility: hidden;
+  height: 0;
+
+  transition: height 2s linear;
+
+  &.open {
+    @apply text-f6;
+    visibility: visible;
+    height: auto;
+  }
+}
+
+.search-menu-entry {
+  @apply p-3 block hover:bg-color2 hover:text-color1;
+}
+
+.webkit-intro-fahrplan {
+  @apply px-2;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  order: 3;
+
+  @screen m {
+    @apply bg-color1;
+    flex-basis: 50%;
+    height: 50%;
+    float: left;
+  }
+
+  @screen s {
+    @apply px-1;
+    // @apply bg-color3;
+    // flex-basis: 30%;
+    // height: 30%;
+    // float: left;
+  }
+}
+
+.info-prefooter {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  margin-bottom: -1px;
+  z-index: 10;
+
+  .info-container {
+    margin-top: calc(15vw - 100px);
+    position: relative;
+
+    bottom: calc(15vw - 150px);
+
+    height: 400px;
+
+    @screen l {
+      margin-top: 60px;
+      bottom: 30px;
+      height: 380px;
+    }
+
+    @screen m {
+      margin-top: 160px;
+      bottom: 130px;
+      height: 300px;
+    }
+
+    @screen s {
+      margin-top: 160px;
+      bottom: 130px;
+      height: 400px;
+    }
+
+    @screen xs {
+      margin-top: 160px;
+      bottom: 130px;
+      height: 250px;
+    }
+  }
+
+  .bone-select-input {
+    @apply bg-color1 text-color2;
+  }
+
+  .webkit-intro-search-container {
+    @apply bg-color1;
+  }
+
+  .webkit-intro-search-label {
+    @apply text-color1;
+  }
+
+  .bone-select-label {
+    @apply text-color1;
+  }
+
+  .suggestion-select {
+    @apply bg-color1 text-color2;
+  }
+
+  .search-menu-entries {
+    @apply bg-color1 text-color2 text-f5n;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+  }
+
+  .search-menu-entry {
+    @apply hover:bg-color4 hover:text-color1;
+  }
+
+  .search-menu-container {
+    position: relative;
+  }
+}
+
+.prefooter-img {
+  position: absolute;
+  bottom: -1px;
+  z-index: 3;
+
+  min-height: 100px;
+
+  max-width: none;
+  min-width: 100%;
+}
+
+a.fahrplan-btn {
+  @apply bg-color3 text-color1;
+  border-radius: 0.125rem;
+  line-height: 21px;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+
+  @screen s {
+    @apply text-f6xs;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+i.cablecar {
+  width: 21px;
+  height: 21px;
+  background-image: url("./assets/icons/cablecar.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  @screen s {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.btn-search {
+  width: 56px;
+  height: 56px;
+
+  @screen s {
+    height: 18px;
+    width: 18px;
+  }
+}

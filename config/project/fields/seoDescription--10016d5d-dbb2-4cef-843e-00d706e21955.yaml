@@ -1,0 +1,18 @@
+contentColumnType: string(640)
+fieldGroup: c1e92987-b749-4931-8f92-f9e1e108c309 # SEO Metadata
+handle: seoDescription
+instructions: 'Die Description muss zwischen 70 und 160 Zeichen beinhalten. Dabei müssen die wichtigisten Keywords aus Inhalt, URL und Title-Meta Tag enthalten sein.'
+name: 'SEO Description'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 160
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

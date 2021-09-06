@@ -1,0 +1,68 @@
+.webkit-form-container {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+  @apply pb-8 pt-8;
+  @apply text-left;
+}
+
+.webkit-form {
+  @apply col-start-3 col-span-20 s:col-start-3 s:col-span-20;
+}
+
+.webkit-form-title {
+  @apply theme('heading.font');
+
+  padding-bottom: 2rem;
+
+  @screen m {
+    padding-bottom: 1.5rem;
+  }
+
+  @screen xs {
+    padding-bottom: 1.5rem;
+  }
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+.form-grid {
+  @apply grid grid-cols-2 gap-x-12 gap-y-6;
+  @apply pb-6;
+}
+
+.schulungen-form-input {
+  > label {
+    @apply block text-f5 font-bold pb-2;
+  }
+
+  > input {
+    @apply w-full bg-color5 h-12 rounded-xl px-4;
+  }
+
+  > textarea {
+    @apply w-full bg-color5 rounded-xl p-4;
+  }
+}
+
+.upload-button {
+  @apply bg-color5 text-f5n rounded-xl px-4 py-3;
+
+  @screen minL {
+    @apply hover:bg-color1 hover:text-color2;
+
+    i {
+      @apply hover:text-color1;
+    }
+  }
+}
+
+.upload-icon {
+  @apply text-color4 pr-2;
+}
+
+.data-loaded {
+  @apply bg-color1 text-color2;
+}

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 8805bdc8-4a56-444f-8ae6-0461d9550a16 # Webkit Navigation
+handle: webkitNavigation
+instructions: ''
+name: 'Webkit Navigation'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_webkitnavigation}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

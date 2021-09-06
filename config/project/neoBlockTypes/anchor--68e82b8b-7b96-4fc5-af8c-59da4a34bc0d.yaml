@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  addbc334-f6b0-4e92-9776-a16faa347027:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e26a8999-481d-4621-93c2-ffb842c3d40e # Anker Id
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Anker
+        sortOrder: 1
+handle: anchor
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Anker
+sortOrder: 19
+topLevel: true

@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  c2b74a5a-6d1b-4447-b630-a27d22ce30f7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b9de0d7d-11e3-4086-8085-5a5d3aa003d2 # Bild
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Banner
+        sortOrder: 1
+handle: imagebanner
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Banner Bild'
+sortOrder: 4
+topLevel: true

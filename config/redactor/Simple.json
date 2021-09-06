@@ -1,0 +1,15 @@
+{
+  "imageResizable": false,
+  "imageLink": false,
+  "imageCaption": false,
+  "imageFloatMargin": "0px",
+  "buttons": [
+    "html",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "link",
+    "file"
+  ],
+  "toolbarFixed": true
+}

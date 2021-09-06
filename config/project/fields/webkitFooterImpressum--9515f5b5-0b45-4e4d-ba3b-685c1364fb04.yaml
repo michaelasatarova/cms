@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 7a79aeda-db40-4ea4-83d8-db8f17ac6338 # Footer
+handle: webkitFooterImpressum
+instructions: ''
+name: 'Webkit Footer Impressum'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_webkitfooterimpressum}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

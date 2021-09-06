@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 34237880-1398-4ff6-b2bd-8b9197184b8a # Webkit Intro
+handle: introMatrix
+instructions: 'Es kann nur ein Intro ausgewählt werden'
+name: Intros
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_intromatrix}}'
+  maxBlocks: '1'
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

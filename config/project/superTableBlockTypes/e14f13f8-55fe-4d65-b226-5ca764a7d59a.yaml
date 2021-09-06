@@ -1,0 +1,157 @@
+field: 7c1b1bbf-20a6-4751-b641-c86875b38786 # Liste
+fieldLayouts:
+  23824702-c2c5-472c-ab85-3d7c9f06998d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: edfe157b-06af-4ce4-808a-88e789977548 # Link Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9514b336-4d2c-4d7b-b4c6-a57026cb5eaa # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9514b336-4d2c-4d7b-b4c6-a57026cb5eaa: # Icon
+    contentColumnType: text
+    fieldGroup: null
+    handle: icon
+    instructions: "Icon von https://fontawesome.com/\r\nFormat: fas fa-arrow-right"
+    name: Icon
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'fas fa-arrow-right'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  edfe157b-06af-4ce4-808a-88e789977548: # Link Button
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkButton
+    instructions: "Wenn der Eigene Linktext nicht ausgefüllt wird, wird der Namen des Links verwendet.\r\n\r\nWenn kein Link verwendet werden soll, nur das Feld \"Eigener Linktext\" ausfüllen"
+    name: 'Link Button'
+    searchable: false
+    settings:
+      allowCustomText: '1'
+      allowTarget: ''
+      allowedLinkNames:
+        3: entry
+        6: custom
+        9: url
+      autoNoReferrer: ''
+      defaultLinkName: entry
+      defaultText: 'Mehr erfahren'
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: typedlinkfield\fields\LinkField

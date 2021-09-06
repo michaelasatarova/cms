@@ -1,0 +1,51 @@
+# ----------------------------------------------------------------------------------------
+# Usage
+
+# 1. Copy the file "example.gitlab-ci.yml" to your project root and name it ".gitlab-ci.yml"
+# 2. Change the environment URLs
+
+# ----------------------------------------------------------------------------------------
+# Base job definitions (for extending only)
+
+.build: # base build job
+  stage: build
+  image: "node:lts-stretch"
+  tags:
+    - ng
+  cache:
+    key: $CI_COMMIT_BRANCH
+    paths:
+      - node_modules/
+  artifacts:
+    paths:
+      - web/
+  before_script:
+    - node --version
+    - npm --version
+    - npm i
+  script:
+    - npm run-script build:staging || echo "ES6 build task skipped (not available)"
+    - npm run-script build:es5:staging || echo "ES5 build task skipped (not available)"
+
+.deploy: # base deploy job
+  stage: deploy
+  image: "node:lts-stretch"
+  tags:
+    - ng
+  cache:
+    key: $CI_COMMIT_BRANCH
+    paths:
+      - node_modules/
+    policy: pull # use pull strategy because this stage doesn't change deps
+  when: on_success
+  dependencies:
+    - build
+  before_script:
+    - node --version
+    - npm --version
+
+# ----------------------------------------------------------------------------------------
+# General jobs
+
+build:
+  extends: .build

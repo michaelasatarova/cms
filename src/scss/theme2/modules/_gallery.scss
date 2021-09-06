@@ -1,0 +1,135 @@
+@use '../images.scss';
+
+.webkit-gallery-container {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-gallery-title {
+  @apply text-left col-start-3 col-span-20 row-start-1 row-span-1;
+  padding-bottom: 2.1rem;
+  @apply theme('gallery.title');
+
+  @screen m {
+    padding-bottom: 1.65rem;
+  }
+
+  @screen xs {
+    padding-bottom: 1.25rem;
+  }
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+.webkit-gallery-container-cell {
+  @apply col-start-3 col-span-20 row-start-2 row-span-1;
+}
+
+// ------------------------------------------------
+// Grid container for items
+
+.webkit-gallery-parent {
+  @apply grid justify-items-stretch items-stretch rounded-2xl gap-6 xs:gap-3;
+  @apply theme('gallery.cols');
+}
+
+.webkit-gallery-item {
+  @apply col-span-1 row-span-1;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+// ------------------------------------------------
+// Grid in item cell
+
+.webkit-gallery-item-grid {
+  @apply grid grid-cols-1 overflow-hidden h-full;
+  grid-template-rows: max-content 1fr;
+
+  > * {
+    @apply col-start-1 col-span-1;
+  }
+}
+
+// ------------------------------------------------
+// Item grid rows
+
+// ------------------------------------
+// row 1 - 2 (background)
+.webkit-gallery-cell-background {
+  @apply row-start-1 row-span-2;
+  @apply theme('gallery.backgroundColorCell');
+}
+
+// ------------------------------------
+// row 1
+
+.webkit-gallery-cell-overlay {
+  position: relative;
+  @apply row-start-1 row-span-1;
+  @apply transition-opacity duration-300 rounded-2xl;
+  @apply theme('gallery.hoverOverlay.backgroundColor');
+  z-index: 666;
+}
+
+.webkit-gallery-cell-overlay-container {
+  @apply absolute text-center;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.webkit-gallery-cell-overlay-icon {
+  @apply leading-none inline-block cursor-pointer;
+  @apply flex items-center justify-center rounded-full;
+  @apply h-10 w-10 m:h-8 m:w-8 xs:h-6 xs:w-6;
+  @apply mb-3;
+  border-width: 4px;
+
+  i {
+    @apply theme('gallery.hoverOverlay.icon');
+  }
+}
+
+@screen minL {
+  .webkit-gallery-item:hover {
+    .webkit-gallery-cell-overlay {
+      opacity: 1;
+    }
+  }
+}
+
+.webkit-gallery-cell-overlay-text {
+  @apply theme('gallery.hoverOverlay.text');
+}
+
+.webkit-gallery-cell-img {
+  @apply row-start-1 row-span-1 rounded-2xl;
+  @apply overflow-hidden;
+}
+
+.webkit-gallery-image {
+  @apply w-full rounded-2xl;
+  @extend .bg-img;
+  @apply theme('gallery.aspectRatio');
+}
+
+// ------------------------------------
+// row 2
+.webkit-gallery-heading {
+  @apply row-start-2 row-span-1 text-left;
+  @apply pt-4 pb-4 px-4;
+  @apply theme('gallery.heading.font');
+}
+
+.webkit-gallery-load-more-button-container {
+  @apply flex justify-start content-center py-4 pt-6 xs:pt-5;
+}
+
+.webkit-gallery-load-less-button-container {
+  @apply flex justify-start content-center p-4 pt-6 xs:pt-5;
+}

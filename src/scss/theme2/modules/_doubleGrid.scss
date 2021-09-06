@@ -1,0 +1,88 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+%text-alignment {
+  @apply text-left;
+}
+
+.webkit-doubleGrid-background {
+  @apply theme('doubleGrid.color');
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-doubleGrid-container {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24;
+}
+
+.webkit-doubleGrid-container-cell {
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-doubleGrid-parent {
+  @apply grid justify-items-stretch items-stretch grid-cols-2 s:grid-cols-1 rounded-2xl;
+  @apply theme('doubleGrid.gapBetweenBlocks');
+}
+
+.webkit-doubleGrid-item {
+  @apply col-span-1 row-span-1 rounded-2xl bg-color5;
+  @apply relative z-10 pb-4 ;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+.webkit-doubleGrid-item-grid {
+  @apply grid grid-cols-1 overflow-hidden h-full;
+  grid-template-rows: max-content max-content max-content 1fr max-content;
+
+  > * {
+    @apply col-start-1 col-span-1;
+  }
+}
+
+.webkit-doubleGrid-cell-background {
+  @apply row-start-1 row-span-5 rounded-2xl;
+  @apply theme('doubleGrid.blockColor');
+  @apply theme('doubleGrid.blockBorder');
+}
+
+.webkit-doubleGrid-cell-img {
+  @apply row-start-1 row-span-1 mb-4 s:mb-2/24;
+  @apply overflow-hidden rounded-t-2xl;
+}
+
+.webkit-doubleGrid-image {
+  @apply w-full;
+  @extend .bg-img;
+  @apply theme('doubleGrid.imageAspectRatio');
+}
+
+.webkit-doubleGrid-heading {
+  @apply row-start-2 row-span-1;
+  @apply theme('doubleGrid.heading.font');
+  @apply px-2/24 pt-2;
+  @extend %text-alignment;
+}
+
+.webkit-doubleGrid-title {
+  @apply row-start-3 row-span-1;
+  @apply theme('doubleGrid.title.font');
+  @apply px-2/24 pt-1 pb-3 xs:pb-2;
+  @extend %text-alignment;
+}
+
+.webkit-doubleGrid-text {
+  @apply row-start-4 row-span-1;
+  @apply theme('doubleGrid.text.font');
+  @apply px-2/24;
+  @extend %text-alignment;
+}
+
+.webkit-doubleGrid-button-cell {
+  @apply row-start-5 row-span-1;
+}
+
+.webkit-doubleGrid-button {
+  @apply self-end flex mt-4 mr-4;
+  @apply justify-end;
+}

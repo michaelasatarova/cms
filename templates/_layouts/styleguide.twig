@@ -1,0 +1,81 @@
+{% extends "webkit/_layouts/base" %}
+
+
+{% block favicons %}
+<!-- <link rel="apple-touch-icon" sizes="180x180"
+				href="{{ alias('@web/favicon/apple-touch-icon.png') }}">
+	<link rel="icon" type="image/png" sizes="32x32"
+				href="{{ alias('@web/favicon/favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16"
+				href="{{ alias('@web/favicon/favicon-16x16.png') }}">
+	<link rel="mask-icon"
+				href="{{ alias('@web/favicon/safari-pinned-tab.svg') }}"
+				color="#878787">
+	<link rel="shortcut icon"
+				href="{{ alias('@web/favicon/favicon.ico') }}">
+	<meta name="msapplication-config" content="{{ alias('@web/favicon/browserconfig.xml') }}">
+	<meta name="theme-color" content="#ffffff"> -->
+{% endblock favicons %}
+
+
+{% block preHead %}
+{% include "_includes/head-scripts" %}
+{% endblock preHead %}
+
+
+{% block contentBeforeWebkitModules %}
+ <div class="">
+   <h1 class="text-f1 text-color3">Styleguide</h1>
+   <h2 class="mt-8 text-f2 text-color4">Farben</h2>
+   <div class="grid grid-cols-8 gap-4 bg-color2 text-f4">
+     <div>
+       <div>Color 1</div>
+       <div class="bg-color1 border-color1 border-2 pt-3/1"></div>
+     </div>
+     <div>
+      <div>Color 2</div>
+      <div class="bg-color2 border-color1 border-2 pt-3/1"></div>
+    </div>
+    <div>
+      <div>Color 3</div>
+      <div class="bg-color3 border-color1 border-2 pt-3/1"></div>
+    </div>
+    <div>
+      <div>Color 4</div>
+      <div class="bg-color4 border-color1 border-2 pt-3/1"></div>
+    </div>
+    <div>
+      <div>Color 5</div>
+      <div class="bg-color5 border-color1 border-2 pt-3/1"></div>
+    </div>
+    <div>
+      <div>Color 6</div>
+      <div class="bg-color6 border-color1 border-2 pt-3/1"></div>
+    </div>
+   </div>
+   <h2 class="mt-8 text-f2 text-color4">Fonts</h2>
+   <div class="text-f1">Font 1</div>
+   <div class="text-f2">Font 2</div>
+   <div class="text-f3">Font 3</div>
+   <div class="text-f4">Font 4</div>
+   <div class="text-f5">Font 5</div>
+   <div class="text-f6">Font 6</div>
+   <h2 class="mt-8 text-f2 text-color4">Buttons</h2>
+
+   <div class="webkit-btn__big">
+     Button
+   </div>   
+   <div class="webkit-btn__small">
+    1
+  </div>
+ </div>
+{% endblock contentBeforeWebkitModules %}
+
+
+{% block contentAfterWebkitModules %}
+{% endblock contentAfterWebkitModules %}
+
+
+{% block endBody %}
+{% include "_includes/footer-scripts" %}
+{% endblock endBody %}

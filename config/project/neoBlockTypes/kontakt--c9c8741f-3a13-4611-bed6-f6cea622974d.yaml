@@ -1,0 +1,43 @@
+childBlocks: ''
+field: 2a2eb0bd-8dc4-4700-84d9-aae01b0f498c # Webkit Footer Module
+fieldLayouts:
+  08901729-d852-4c33-b633-224cd82b5256:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 148a3e7c-2a18-409f-a343-5d1627de8284 # Text Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 233d2610-18ef-4c10-a179-5c4a43ec77eb # Telefon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 491add03-cf0f-4073-8ed8-2dac0626518e # Email
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Tab 1'
+        sortOrder: 1
+handle: kontakt
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Kontakt
+sortOrder: 4
+topLevel: true

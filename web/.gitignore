@@ -1,0 +1,9 @@
+*
+!/robots.*.txt
+!/robots.txt
+!/assets
+!/assets/**
+!/.gitignore
+!/.htaccess
+!/index.php
+!/favicon.ico

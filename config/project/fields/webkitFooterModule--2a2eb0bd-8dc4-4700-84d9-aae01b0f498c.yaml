@@ -1,0 +1,15 @@
+contentColumnType: string
+fieldGroup: 7a79aeda-db40-4ea4-83d8-db8f17ac6338 # Footer
+handle: webkitFooterModule
+instructions: ''
+name: 'Webkit Footer Module'
+searchable: false
+settings:
+  maxBlocks: '4'
+  maxTopBlocks: ''
+  minBlocks: '4'
+  propagationMethod: all
+  wasModified: false
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

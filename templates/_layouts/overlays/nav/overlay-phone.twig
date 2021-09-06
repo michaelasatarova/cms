@@ -1,0 +1,16 @@
+{% set navItems = navigation.navigationMehrstufig.level(1).all() %}
+<div class="webkit-header-nav-overlay" v-on:click.stop>
+	{% include craft.webkit.template("_includes/header/header-placeholder") %}
+	<div class="webkit-header-nav-overlay-grid
+						  {% if currentSite.handle == "transport" %}bg-color1
+							{% elseif currentSite.handle == "agro" %}bg-color10	
+							{% elseif currentSite.handle == "energie" %}	bg-color11
+							{% else %}bg-color7
+							{% endif %} 
+	">
+	
+		<ul class="webkit-header-nav-item-list pt-9">
+			<li class="hidden ">	{{ header.tel.value }} </li>
+		</ul>	
+	</div>
+</div>

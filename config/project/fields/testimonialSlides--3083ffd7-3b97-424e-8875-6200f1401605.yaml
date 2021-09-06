@@ -1,0 +1,48 @@
+contentColumnType: string
+fieldGroup: e6072f5b-24cd-4730-92fd-25fe65062e61 # Common
+handle: testimonialSlides
+instructions: ''
+name: 'Testimonial Slides'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 25dce049-3daf-44a9-8587-879831013d22 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 27786d5b-9b80-4548-9341-15576d41c020 # Titel
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 7bfec85e-ea01-4d17-98d3-c250ef9ffb30 # Bild
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - a37b6973-aff8-4d3e-9af5-edeca898fe07 # Link Button
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_testimonialslides}}'
+  fieldLayout: matrix
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

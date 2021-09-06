@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 51f9c559-f4db-4a9c-97d9-065574859d27 # Formular
+handle: formFields
+instructions: ''
+name: 'Formular Felder'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_formfields}}'
+  maxBlocks: ''
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

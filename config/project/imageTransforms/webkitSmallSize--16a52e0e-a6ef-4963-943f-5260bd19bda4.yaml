@@ -1,0 +1,9 @@
+format: jpg
+handle: webkitSmallSize
+height: null
+interlace: none
+mode: crop
+name: 'Small Size'
+position: center-center
+quality: null
+width: 256

@@ -1,0 +1,43 @@
+childBlocks: ''
+field: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+fieldLayouts:
+  a9193155-d46b-4fec-80d3-8d91b9538a76:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: Titel
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e5d89d81-fd18-4420-8a50-78fde83337a5 # Grid Block
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7c35398c-fa5f-4c8a-a8f7-40f2a4f60eea # Mehr Laden Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Grid
+        sortOrder: 1
+handle: grid
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: '3-5er Raster Bild & Text'
+sortOrder: 14
+topLevel: true

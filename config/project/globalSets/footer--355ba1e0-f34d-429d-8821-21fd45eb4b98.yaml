@@ -1,0 +1,103 @@
+fieldLayouts:
+  07ec0f09-7c95-413c-95b5-6d2a6f01a452:
+    tabs:
+      -
+        elements:
+          -
+            heading: 'Logo + Text'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: b9de0d7d-11e3-4086-8085-5a5d3aa003d2 # Bild
+            instructions: ''
+            label: Logo
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 148a3e7c-2a18-409f-a343-5d1627de8284 # Text Body
+            instructions: ''
+            label: Text
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            heading: Navigation
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 7e64eee6-5cf0-40d2-bec2-5b5cf0a024e0 # Heading
+            instructions: ''
+            label: Titel
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 039cc497-f979-4f93-aef8-28a8e5458b59 # Webkit Navigation
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            heading: Kontakt
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 667c7c4c-29b7-4c40-8b4b-ef1a0756f6ec # textBody2
+            instructions: ''
+            label: Text
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 233d2610-18ef-4c10-a179-5c4a43ec77eb # Telefon
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 491add03-cf0f-4073-8ed8-2dac0626518e # Email
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            heading: 'Sub Footer'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 9515f5b5-0b45-4e4d-ba3b-685c1364fb04 # Webkit Footer Impressum
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f149b028-a15f-4397-b423-455f65a2f80d # Webkit Footer Socialmedia
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Footer
+        sortOrder: 1
+handle: footer
+name: Footer
+sortOrder: 2

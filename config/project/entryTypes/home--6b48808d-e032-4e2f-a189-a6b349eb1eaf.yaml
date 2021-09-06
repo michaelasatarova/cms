@@ -1,0 +1,103 @@
+fieldLayouts:
+  261722f7-5359-442a-8b6e-2da7312ff8ce:
+    tabs:
+      -
+        elements:
+          -
+            heading: Intro
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 63f00039-f7fe-404d-adf5-1b83bc001e5d # Intros
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Intro
+        sortOrder: 1
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 910ed34d-c1a1-40ba-8576-af9f30717649 # Webkit Module
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 160ff359-c841-4bf0-9a46-06a6c1b41574 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 10016d5d-dbb2-4cef-843e-00d706e21955 # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f996e713-5084-4100-ae80-2a051321ab36 # SEO Keywords
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7dedfc6a-5cee-4cd7-9173-171f7d38bb51 # SEO Open Graph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'SEO Metadata'
+        sortOrder: 3
+handle: home
+hasTitleField: false
+name: Home
+section: 4d5576ce-455d-4bd5-b83f-27e3d316b0cc # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

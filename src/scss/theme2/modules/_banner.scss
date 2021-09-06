@@ -1,0 +1,37 @@
+@use '../buttons.scss';
+
+.webkit-banner-container {
+  @apply theme('banner.color');
+  @apply py-verticalSpacing l:py-1/24 m:py-2/24;
+}
+
+.webkit-banner {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+  grid-template-rows: max-content max-content;
+}
+
+.webkit-banner-button {
+  @apply mt-1/24 justify-self-end;
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-banner-text {
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply theme('banner.text.font');
+}
+
+.webkit-banner-title {
+  @apply w-max;
+  height: max-content;
+  margin-bottom: .5rem;
+  /* @apply m:pb-4; */
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply theme('banner.title.font');
+  @screen xs {
+    /* padding-bottom: 0.75rem; */
+  }
+}

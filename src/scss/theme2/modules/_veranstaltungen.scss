@@ -1,0 +1,167 @@
+%grid-alignment {
+  @apply justify-start text-left;
+}
+
+// ------------------------------------------------
+// Outer grid container
+
+.webkit-veranstaltungen-background {
+  @apply theme('textGrid.backgroundColor');
+  @apply relative z-10;
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-veranstaltungen-container {
+  @apply grid grid-cols-24;
+  @apply max-w-content mx-auto;
+}
+
+.webkit-veranstaltungen-container-cell {
+  @apply col-start-3 col-span-20;
+  @apply xl:col-start-3 xl:col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-3 xs:col-span-20;
+}
+
+// ------------------------------------------------
+// Grid container for items
+
+.webkit-veranstaltungen-parent {
+  @apply grid justify-items-stretch items-stretch  gap-6 m:gap-5 xs:gap-3;
+  @apply theme('textGrid.cols');
+}
+
+.webkit-veranstaltungen-item {
+  @apply rounded-2xl bg-color5 hover:bg-color5;
+ /*  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+
+  @apply col-span-1 row-span-1;
+
+
+  @screen xl {
+    &:nth-child(4n) {
+      /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+    }
+  }
+
+  @screen s {
+    &:nth-child(2n) {
+      /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+    }
+  }
+
+  @screen maxContent {
+    &:nth-child(4n) {
+      /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+    }
+
+    &:nth-child(5n),
+    &:first-child {
+      /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+    }
+  }
+}
+
+// ------------------------------------------------
+// Grid in item cell
+
+.webkit-veranstaltungen-item-grid {
+  @apply overflow-hidden h-full;
+
+}
+
+// ------------------------------------------------
+// Item grid rows
+
+// ------------------------------------
+// row 1 - 3 (background)
+.webkit-veranstaltungen-cell-background {
+  @apply row-start-1 row-span-3;
+  @apply theme('grid.backgroundColorCell');
+}
+
+// ------------------------------------
+// row 1
+.webkit-veranstaltungen-heading {
+  @apply row-start-1 row-span-1;
+  @apply pl-2 m:pl-10 pb-2 xs:pb-3 xs:break-all;
+  @extend %grid-alignment;
+  @apply theme('textGrid.heading.font');
+}
+
+.webkit-veranstaltungen-main-heading {
+  @apply max-w-content mx-auto self-start w-full;
+  @apply col-start-3 col-span-20;
+  @apply xl:col-start-3 xl:col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-3 xs:col-span-20;
+  padding-bottom: 2.1rem;
+  @apply theme('grid.headingFont');
+
+  @screen m {
+    padding-bottom: 1.65rem;
+  }
+
+  @screen xs {
+    padding-bottom: 1.25rem;
+  }
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+
+// ------------------------------------
+// row 2
+
+.webkit-veranstaltungen-text {
+  @apply row-start-2 row-span-1;
+  @apply pb-4 pl-2 m:pl-10;
+  @extend %grid-alignment;
+  @apply theme('textGrid.text.font');
+}
+
+.webkit-veranstaltungen-date {
+  @apply absolute left-0 top-0 p-3;
+  @apply rounded-xl border-2 border-color3 text-color3;
+}
+
+.webkit-veranstaltungen-datum {
+  @apply text-color1 pl-2 m:pl-10 text-f5;
+}
+
+
+// ------------------------------------
+// row 3
+
+.webkit-veranstaltungen-button-cell {
+  @apply row-start-3 row-span-1;
+}
+
+.webkit-veranstaltungen-button {
+  @apply self-end justify-end flex;
+  @apply mr-4 xs:mr-4 pb-4;
+}
+
+.webkit-veranstaltungen-load-more-button-container {
+  @apply col-start-3 col-span-20;
+  @apply xl:col-start-3 xl:col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+  @apply xs:col-start-3 xs:col-span-20;
+  @apply flex justify-start content-center pt-8 xs:pt-4 xs:text-center;
+  @apply row-start-3;
+}
+
+.webkit-veranstaltungen-item {
+  @apply transition-colors;
+  transition-duration: 400ms;
+  @screen minL {
+    &:hover {
+
+      i {
+        @apply theme('textGrid.hover.button');
+      }
+    }
+  }
+}

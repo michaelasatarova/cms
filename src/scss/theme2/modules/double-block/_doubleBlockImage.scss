@@ -1,0 +1,19 @@
+@use '../../images.scss';
+
+.webkit-double-image-container {
+  @apply p-0 self-center xs:order-first h-full xs:h-auto; //shrink image with padding
+/*   @apply shadow-lg xs:shadow-none; */
+
+  @screen xs {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+.webkit-double-image {
+  @apply bg-center bg-cover bg-no-repeat h-full rounded-l-2xl xs:rounded-t-2xl xs:rounded-b-none;
+}
+
+.webkit-double-image-aspect {
+  @apply theme('doubleBlock.media.mediaAspect');
+}

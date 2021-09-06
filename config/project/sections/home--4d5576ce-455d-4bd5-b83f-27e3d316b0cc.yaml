@@ -1,0 +1,16 @@
+enableVersioning: true
+handle: home
+name: Home
+propagationMethod: all
+siteSettings:
+  3264890e-5157-4c66-bae6-dfff63d808d4: # craft webkit
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+  f19f374f-2e33-41a3-a13e-0bebaa417841: # craft webkit EN
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+type: single

@@ -1,0 +1,104 @@
+.webkit-newsletter-container {
+  @apply theme('bannerNewsletter.color');
+  @apply relative z-10;
+}
+
+.webkit-newsletter-grid {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24;
+}
+
+.webkit-newsletter-cell {
+  @apply col-start-3 col-span-20;
+  @apply py-10;
+}
+
+.webkit-newsletter {
+  @apply grid grid-cols-20;
+}
+
+.webkit-newsletter-text {
+  @apply col-span-11 s:col-span-20 self-start pr-4;
+  @apply s:pb-1/24 s:pr-0 s:text-center;
+  @apply xs:pb-1/24 xs:pr-0 xs:text-left;
+  @apply theme('bannerNewsletter.font');
+}
+
+.webkit-newsletter-form-container {
+  @apply col-start-12 col-span-9;
+  @apply s:row-start-2 s:col-start-4 s:col-span-14;
+  @apply xs:col-start-1 xs:col-span-20;
+}
+
+.webkit-newsletter-form {
+  @apply grid w-full h-full;
+  @apply theme('bannerNewsletter.inputFont');
+  grid-template-columns: 1fr max-content;
+
+  @screen s {
+    margin: 0 auto;
+  }
+}
+
+.webkit-newsletter-input {
+  @apply self-center cursor-text outline-none;
+  @apply border-none;
+  @apply pl-4;
+  @apply h-10 m:h-9 s:h-8;
+  @apply leading-none inline-block;
+  @apply min-w-0;
+  @apply theme('bannerNewsletter.buttonColor');
+  @apply theme('bannerNewsletter.caretColor');
+}
+
+.webkit-newsletter-input::placeholder {
+  @apply theme('bannerNewsletter.placeholder');
+}
+
+%button-box {
+  @apply flex items-center justify-center  cursor-pointer;
+  @apply h-10 w-10 m:h-9 m:w-9 xs:h-8 xs:w-8 s:h-8 s:w-8;
+  /* @apply theme('bannerNewsletter.icon'); */
+}
+
+.webkit-newsletter-button {
+  @apply self-center h-full cursor-pointer;
+
+  i {
+    @extend %button-box;
+    @apply  bg-color3 text-f5n;
+
+    &:before {
+      @apply transition-colors duration-200;
+    }
+  }
+
+  @screen minL {
+    &:hover {
+      .webkit-newsletter-send-icon {
+        @apply bg-color4;
+
+        &:before {
+          @apply text-color1;
+        }
+      }
+    }
+  }
+}
+.webkit-newsletter-error {
+  @apply pt-2 text-color3 text-center;
+  @apply theme('bannerNewsletter.font');
+}
+
+.webkit-newsletter-button-success,
+.webkit-loadingSpinner:hover,
+.webkit-newsletter-button-success:hover {
+  @apply text-color2 bg-color4 border-color2;
+  @apply cursor-default;
+}
+
+.webkit-newsletter-send-icon
+{
+  @apply bg-color3 flex h-full;
+  @apply theme('bannerNewsletter.icon');
+}

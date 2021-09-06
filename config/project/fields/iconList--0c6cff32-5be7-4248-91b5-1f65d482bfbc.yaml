@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: iconList
+instructions: "Icon von https://fontawesome.com/\r\nFormat: fas fa-arrow-right"
+name: 'Icon Liste'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 57464a45-1f6a-4547-ad41-fe401f0fda1a # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1d46cb2a-66ba-425a-83d3-06a98b535c3c # Icon
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_iconlist}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

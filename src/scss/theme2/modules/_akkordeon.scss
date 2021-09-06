@@ -1,0 +1,118 @@
+.webkit-akkordeon-container {
+  @apply theme('akkordeon.color');
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-akkordeon {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24;
+
+  .download-grid-container {
+    @apply mb-4;
+  }
+}
+
+.webkit-akkordeon-heading-container {
+  @apply grid grid-cols-18;
+}
+
+.webkit-akkordeon-heading {
+  padding-bottom: 2.1rem;
+  @apply col-start-1 col-end-20;
+  @apply pt-4;
+
+  @screen m {
+    padding-bottom: 1.65rem;
+  }
+
+  @screen xs {
+    padding-bottom: 1.25rem;
+  }
+
+  @apply theme('akkordeon.heading.font');
+
+  &::after {
+    @apply theme('heading.underline');
+    content: '';
+  }
+}
+.webkit-akkordeon-entry {
+  @apply bg-color5 rounded-2xl;
+}
+
+.webkit-akkordeon-entry + .webkit-akkordeon-entry {
+  @apply mt-4;
+}
+
+.webkit-akkordeon-title {
+  @apply py-4 s:py-3 xs:py-2;
+  @apply cursor-pointer;
+  @apply grid grid-cols-18;
+}
+
+.webkit-akkordeon-title-text {
+  @apply self-center;
+  @apply col-start-2 col-end-17 pr-2;
+  @apply theme('akkordeon.title.font');
+}
+
+.webkit-akkordeon-text-container {
+  @apply grid grid-cols-18;
+  height: 0;
+  overflow: hidden;
+  transition: height .3s ease;
+}
+
+.webkit-akkordeon-text {
+  @apply pb-8;
+  @apply col-start-2 col-end-17;
+  @apply theme('akkordeon.text.font');
+}
+
+.webkit-akkordeon-block {
+  @apply col-start-6 col-span-14;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-akkordeon-icon-container {
+  @apply justify-self-end self-center text-color1;
+}
+
+@screen m {
+  .webkit-akkordeon-active {
+  }
+  .webkit-akkordeon-icon-container {
+    .webkit-btn__small {
+      @apply transition-none;
+    }
+  }
+}
+
+.new-tab-container{
+display: flex;
+width: 100%;
+margin: 0px auto;
+margin-bottom: 30px;
+
+}
+
+.open-new-tab{
+  padding: 10px;
+  justify-content: center;
+  border-radius: 1rem;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  padding: 15px;
+  margin: 10px 0;
+  @apply bg-color2;
+
+  &:hover{
+    @apply bg-color1 text-color2;
+  }
+}
+
+.fa-angle-right{
+  color:rgba(255, 183, 3,) !important;
+  font-weight: 400;
+  margin: 0 0.61rem;
+}

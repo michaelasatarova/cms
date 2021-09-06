@@ -1,0 +1,156 @@
+field: 63f00039-f7fe-404d-adf5-1b83bc001e5d # Intros
+fieldLayouts:
+  dc88c8b2-3aa6-4f13-bdea-8b3ff605ee88:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: be4384af-a9e1-4e9f-ac66-b00bc17cea18 # Intro Überschrift
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 773b97cc-cb48-46a7-8c3f-ce35db2bd6c5 # Intro Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 31ed697c-a04f-4e95-97f5-b641db6e0087 # Intro Hintergrund Bild
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 097aed40-8f08-4c93-8b75-285855e34a80 # Intro Vordergrund Bild
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  31ed697c-a04f-4e95-97f5-b641db6e0087: # Intro Hintergrund Bild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: webkitIntroScrollBgImg
+    instructions: ''
+    name: 'Intro Hintergrund Bild'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  097aed40-8f08-4c93-8b75-285855e34a80: # Intro Vordergrund Bild
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: webkitIntroScrollFgImg
+    instructions: ''
+    name: 'Intro Vordergrund Bild'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9f4851cc-ccca-4537-bcd7-386d4debaca9' # Bilder
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  773b97cc-cb48-46a7-8c3f-ce35db2bd6c5: # Intro Text
+    columnSuffix: null
+    contentColumnType: string(1020)
+    fieldGroup: null
+    handle: webkitIntroScrollText
+    instructions: ''
+    name: 'Intro Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 255
+      code: ''
+      columnType: null
+      initialRows: '2'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  be4384af-a9e1-4e9f-ac66-b00bc17cea18: # Intro Überschrift
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: webkitIntroScrollHeading
+    instructions: ''
+    name: 'Intro Überschrift'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: scroll
+name: Scroll
+sortOrder: 1

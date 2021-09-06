@@ -1,0 +1,96 @@
+@use '../buttons.scss';
+@use '../images.scss';
+
+%text-alignment {
+  @apply text-left;
+}
+
+.webkit-oneGrid-background {
+  @apply theme('doubleGrid.color');
+  @apply py-verticalSpacing l:py-1/24 xs:py-2/24;
+}
+
+.webkit-oneGrid-container {
+  @apply max-w-content mx-auto;
+  @apply grid grid-cols-24;
+}
+
+.webkit-oneGrid-container-cell {
+  @apply col-start-3 col-span-20;
+  @apply s:col-start-3 s:col-span-20;
+}
+
+.webkit-oneGrid-parent {
+  @apply grid justify-items-stretch items-stretch grid-cols-1 s:grid-cols-1;
+  @apply theme('oneGrid.gapBetweenBlocks');
+}
+
+.webkit-oneGrid-item {
+  @apply s:p-0 bg-color5;
+  @apply col-span-1 row-span-1;
+  @apply relative z-10;
+/*   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px; */
+}
+
+.webkit-oneGrid-item-grid {
+  @apply grid grid-cols-24 overflow-hidden h-full s:grid-cols-1;
+  grid-template-rows: max-content 1fr max-content;
+
+  > * {
+    @apply s:col-start-1 s:col-span-1;
+  }
+}
+
+.webkit-oneGrid-cell-background {
+  @apply col-start-1 col-span-24;
+  @apply row-start-1 row-span-5;
+  @apply theme('oneGrid.blockColor');
+  @apply theme('oneGrid.blockBorder');
+}
+
+.webkit-oneGrid-cell-img {
+  @apply row-start-1 row-span-1;
+  @apply col-start-1 col-span-8 s:col-start-1 s:col-span-1;
+  @apply overflow-hidden rounded-l-2xl s:rounded-t-2xl s:rounded-b-none;
+}
+
+.webkit-oneGrid-image {
+  @apply w-full h-full;
+  // @extend .bg-img;
+  @apply theme('oneGrid.imageAspectRatio');
+
+  @apply bg-cover;
+}
+
+.webkit-oneGrid-content {
+  @apply pt-2/24 px-4 pb-0 pl-8 s:p-5 bg-color5 rounded-r-2xl;
+  @apply row-start-1 row-span-1 s:row-start-2 s:rounded-b-2xl s:rounded-t-none;
+  @apply col-start-9 col-span-16 s:col-start-1 s:col-span-1;
+}
+
+.webkit-oneGrid-heading {
+  @apply row-start-3 row-span-1 pb-2;
+  @apply theme('oneGrid.heading.font');
+  @extend %text-alignment;
+}
+
+.webkit-oneGrid-title {
+  @apply row-start-3 row-span-1;
+  @apply theme('oneGrid.title.font');
+  @extend %text-alignment;
+}
+
+.webkit-oneGrid-text {
+  @apply row-start-4 row-span-1;
+  @apply theme('oneGrid.text.font');
+  @extend %text-alignment;
+}
+
+.webkit-oneGrid-button-cell {
+  @apply row-start-5 row-span-1 pb-2;
+}
+
+.webkit-oneGrid-button {
+  @apply self-end flex mt-4 mr-4 s:my-0 s:mt-4;
+  @apply justify-end;
+}

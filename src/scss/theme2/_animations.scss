@@ -1,0 +1,41 @@
+a {
+  @apply transition-colors duration-300;
+}
+
+.webkit-doubleGrid-image,
+.webkit-grid-image,
+.webkit-quad-block-image,
+.webkit-testimonial-image,
+.webkit-gallery-image,
+.webkit-structureOverview-image,
+.webkit-oneGrid-image {
+  @apply transition-transform transform;
+  transition-duration: 400ms;
+}
+
+a[href^="https"],
+a[href^="http"],
+.webkit-akkordeon-entry {
+  @screen minL {
+    &:hover {
+      .webkit-doubleGrid-image,
+      .webkit-grid-image,
+      .webkit-quad-block-image,
+      .webkit-testimonial-image,
+      .webkit-gallery-image,
+      .webkit-structureOverview-image,
+      .webkit-oneGrid-image {
+        @apply scale-110;
+      }
+
+      .webkit-btn__big,
+      .webkit-quad-block-button {
+        @apply theme('buttons.hovercolorSmall');
+      }
+
+      .webkit-btn__small {
+        @apply theme('buttons.hovercolorSmall');
+      }
+    }
+  }
+}

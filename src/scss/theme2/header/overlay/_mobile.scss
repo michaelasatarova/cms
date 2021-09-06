@@ -1,0 +1,68 @@
+@use '../base' as *;
+
+.overlay.overlay-navigation-mobile {
+  @apply grid grid-cols-24;
+  @apply items-center fixed w-full transform-gpu top-16;
+  height: $header-height;
+  @apply overflow-visible #{!important};
+  transition: visibility 0s linear 0.2s, opacity 0.2s linear 0s,
+    z-index 0s linear 0.2s;
+   /*  @screen s {
+      @apply left-;
+    } */
+
+  &.overlay-show {
+    transition: visibility 0s linear 0s, opacity 0.2s linear 0s,
+    z-index 0s linear 0s;
+  }
+  
+  > .overlay-inner {
+    @apply  col-start-3 col-span-22;
+    @apply p-0;
+    position: relative;
+    @apply w-full #{!important} min-h-full;
+    @apply s:col-start-3 s:col-span-22;
+    
+
+    @screen s {
+      @apply w-full #{!important} min-h-full;
+    }
+
+    > .overlay-inner-container {
+      @apply absolute block;
+      left: 0;
+      right: 1rem;
+      @apply p-8 s:py-4 rounded-xl;
+      @apply shadow bg-color5;
+      @apply w-auto #{!important};
+
+    }
+
+    .overlay-inner-container{
+      height: 100vh !important;
+      overflow-y: scroll !important;
+    }
+  }
+
+  .nav-text-icon-container {
+    @apply grid cursor-pointer border-color5;
+    grid-template-columns: minmax(0, max-content) minmax(0, 1fr);
+    grid-template-rows: max-content;
+  }
+
+  .nav-text-two-icon-container {
+    @apply grid cursor-pointer border-color5;
+    grid-template-columns: 20px minmax(0, max-content) minmax(20px, 1fr);
+    grid-template-rows: max-content;
+  }
+
+  .hyphens {
+    hyphens: auto;
+  }
+}
+
+.overlay-inner-container{
+  height: 100vh !important;
+  overflow-y: scroll !important;
+}
+//test

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 1bc42527-20f2-450a-9156-9dd0f0c2cef0 # Webkit Module Fields
+handle: youtubeid
+instructions: "z.B. \"dQw4w9WgXcQ\" \r\n\r\nhttps://www.youtube.com/watch?v=dQw4w9WgXcQ"
+name: 'Youtube ID'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

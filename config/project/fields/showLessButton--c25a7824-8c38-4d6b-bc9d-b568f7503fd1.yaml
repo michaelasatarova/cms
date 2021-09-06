@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: e6072f5b-24cd-4730-92fd-25fe65062e61 # Common
+handle: showLessButton
+instructions: ''
+name: 'Weniger anzeigen'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

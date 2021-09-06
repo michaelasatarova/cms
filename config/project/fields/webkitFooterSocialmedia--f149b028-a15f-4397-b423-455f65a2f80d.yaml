@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 7a79aeda-db40-4ea4-83d8-db8f17ac6338 # Footer
+handle: webkitFooterSocialmedia
+instructions: ''
+name: 'Webkit Footer Socialmedia'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_webkitfootersocialmedia}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
